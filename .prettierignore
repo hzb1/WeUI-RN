@@ -1,0 +1,10 @@
+.prettierrc.js
+.hbuilderx/
+.eslintrc.js
+.vscode/
+package.json
+pnpm-lock.yaml
+tsconfig.json
+vite.config.ts
+src/uni_modules/
+src/static/
