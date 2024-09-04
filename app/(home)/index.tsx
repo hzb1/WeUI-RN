@@ -1,6 +1,11 @@
+import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { Text, View, StyleSheet, Image, Dimensions } from 'react-native';
+import {
+  SafeAreaProvider,
+  SafeAreaView,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
 
 import CollapsibleCard from '@/app-components/home/CollapsibleCard';
 import ParallaxScrollView from '@/app-components/home/ParallaxScrollView';
@@ -12,6 +17,17 @@ type Item = {
 };
 
 const Index = () => {
+  const router = useRouter();
+
+  // 获取屏幕的高度和宽度
+  const { height: screenHeight } = Dimensions.get('window');
+
+  // 使用 useSafeAreaInsets 钩子获取安全区域插图
+  const insets = useSafeAreaInsets();
+
+  // 计算不包含安全区域的高度
+  const contentHeight = screenHeight - insets.top - insets.bottom;
+
   // 当前打开的卡片
   const [openTitle, setOpenTitle] = useState<string | null>(null);
 
@@ -22,7 +38,7 @@ const Index = () => {
       items: [
         {
           name: 'Button',
-          url: 'https://weui.io/0.4.x/#/example/button',
+          url: '/button',
         },
         {
           name: 'Form',
@@ -170,16 +186,14 @@ const Index = () => {
     setOpenTitle(open ? title : null);
   };
 
-  const onClickItem = (item: Item['items'][number]) => {};
+  const onClickItem = (item: Item['items'][number]) => {
+    router.push(item.url);
+  };
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={[styles.container, { minHeight: contentHeight }]}>
         <ParallaxScrollView
-          headerBackgroundColor={{
-            light: '#ededed',
-            dark: '#ededed',
-          }}
           headerImage={
             <View style={styles.head}>
               <Image
@@ -195,17 +209,30 @@ const Index = () => {
             </View>
           }
         >
-          <View style={styles.body}>
-            <View style={styles.lists}>
-              {data.map((item) => (
-                <CollapsibleCard
-                  {...item}
-                  isOpen={openTitle === item.title}
-                  key={item.title}
-                  onOpenChange={(open) => onOpenChange(item.title, open)}
-                  onPress={onClickItem}
-                />
-              ))}
+          <View
+            style={{
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}
+          >
+            <View style={styles.body}>
+              <View style={styles.lists}>
+                {data.map((item) => (
+                  <CollapsibleCard
+                    {...item}
+                    isOpen={openTitle === item.title}
+                    key={item.title}
+                    onOpenChange={(open) => onOpenChange(item.title, open)}
+                    onPress={onClickItem}
+                  />
+                ))}
+              </View>
+            </View>
+            <View style={styles.footer}>
+              <Image
+                style={{ width: 84, height: 19 }}
+                source={{ uri: 'https://weui.io/images/icon_footer_link.png' }}
+              ></Image>
             </View>
           </View>
         </ParallaxScrollView>
@@ -220,6 +247,7 @@ const styles = StyleSheet.create({
     height: '100%',
     backgroundColor: '#ededed',
     fontSize: 16,
+    position: 'relative',
   },
   head: {
     padding: 40,
@@ -243,6 +271,15 @@ const styles = StyleSheet.create({
   lists: {
     marginBottom: 20,
     gap: 8,
+  },
+  footer: {
+    paddingTop: 40,
+    paddingBottom: 32,
+    alignItems: 'center',
+    // position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
 });
 

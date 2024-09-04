@@ -1,11 +1,3 @@
-import { Text, View } from 'react-native';
-
-const ButtonDemo = () => {
-  return (
-    <View>
-      <Text>ButtonDemo</Text>
-    </View>
-  );
-};
+import ButtonDemo from '@/app/(demo)/button/ButtonDemo';
 
 export default ButtonDemo;
