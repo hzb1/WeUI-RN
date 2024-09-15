@@ -1,12 +1,16 @@
 import React, { useEffect, useRef } from 'react';
-import { View, Animated, Easing } from 'react-native';
+import { View, Animated, Easing, ColorValue } from 'react-native';
 import Svg, { Circle, Defs, LinearGradient, Stop } from 'react-native-svg';
 
 // 定义组件并添加 props 支持
 const LoadingSpinner = ({
   size = 20,
-  color = 'rgba(255, 255, 255, 0.5)',
+  color = 'rgba(255, 255, 255, 1)',
   duration = 1000,
+}: {
+  size?: number;
+  color?: ColorValue;
+  duration?: number;
 }) => {
   const spinValue = useRef(new Animated.Value(0)).current;
 
@@ -32,8 +36,8 @@ const LoadingSpinner = ({
   });
 
   // 半径和线宽根据大小动态调整
-  const radius = size / 2 - 2; // 调整为合适的半径
   const strokeWidth = 2; // 线宽可以根据需要进行调整
+  const radius = size / 2 - strokeWidth; // 调整为合适的半径
 
   return (
     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -41,7 +45,7 @@ const LoadingSpinner = ({
         <Svg height={size} width={size} viewBox={`0 0 ${size} ${size}`}>
           <Defs>
             <LinearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-              <Stop offset="0%" stopColor={color} stopOpacity="0.9" />
+              <Stop offset="0%" stopColor={color} stopOpacity="0.8" />
               <Stop offset="100%" stopColor={color} stopOpacity="0" />
             </LinearGradient>
           </Defs>

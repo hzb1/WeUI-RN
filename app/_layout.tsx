@@ -12,9 +12,9 @@ export default function RootLayout() {
       <Stack.Screen
         name="(demo)/button/index"
         options={{
-          // headerShown: false,
-          headerBackTitle: '返回',
-          title: '',
+          headerShown: false,
+          // headerBackTitle: '返回',
+          // title: '',
           // fullScreenGestureEnabled: true,
           // navigationBarHidden: true,
         }}

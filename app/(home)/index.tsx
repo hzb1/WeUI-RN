@@ -187,7 +187,7 @@ const Index = () => {
   };
 
   const onClickItem = (item: Item['items'][number]) => {
-    router.push(item.url);
+    router.push(item.url as any);
   };
 
   return (

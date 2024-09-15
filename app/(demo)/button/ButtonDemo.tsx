@@ -9,10 +9,88 @@ const ButtonDemo = () => {
     <DemoPage title={'Button'} desc={'按钮'}>
       <View style={styles.container}>
         <ButtonSpArea>
+          {/* 主要操作 start */}
           <Button type={'primary'}>主要操作</Button>
           <Button type={'primary'} loading={true}></Button>
           <Button type={'primary'} loading>
             主要操作
+          </Button>
+          <Button type={'primary'} disabled={true}>
+            主要操作
+          </Button>
+          {/* 主要操作 end */}
+
+          {/* 次要操作 start */}
+          <Button type={'default'}>次要操作</Button>
+          <Button loading={true}></Button>
+          <Button loading>次要操作</Button>
+          <Button disabled={true}>次要操作</Button>
+          {/* 次要操作 end */}
+
+          {/* 警示操作 start */}
+          <Button type={'warn'}>警示操作</Button>
+          <Button type={'warn'} loading></Button>
+          <Button type={'warn'} loading>
+            警示操作
+          </Button>
+          <Button type={'warn'} disabled={true}>
+            警示操作
+          </Button>
+          {/* 警示操作 end */}
+        </ButtonSpArea>
+
+        <ButtonSpArea>
+          <Button type={'primary'} size={'medium'}>
+            medium 按钮
+          </Button>
+          <Button type={'default'} size={'medium'}>
+            medium 按钮
+          </Button>
+          <Button type={'warn'} size={'medium'}>
+            medium 按钮
+          </Button>
+        </ButtonSpArea>
+
+        <ButtonSpArea style={styles.overlay}>
+          <Button type={'primary'} overlay>
+            overlay 按钮
+          </Button>
+          <Button type={'default'} overlay>
+            overlay 按钮
+          </Button>
+          <Button type={'warn'} overlay>
+            overlay 按钮
+          </Button>
+        </ButtonSpArea>
+
+        <ButtonSpArea style={styles.overlay}>
+          <Button type={'primary'} overlay disabled>
+            overlay 按钮
+          </Button>
+          <Button type={'default'} overlay disabled>
+            overlay 按钮
+          </Button>
+          <Button type={'warn'} overlay disabled>
+            overlay 按钮
+          </Button>
+        </ButtonSpArea>
+
+        <ButtonSpArea
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 12,
+          }}
+        >
+          <Button type={'primary'} size={'mini'}>
+            按钮
+          </Button>
+          <Button type={'default'} size={'mini'}>
+            按钮
+          </Button>
+          <Button type={'warn'} size={'mini'}>
+            按钮
           </Button>
         </ButtonSpArea>
       </View>
@@ -20,16 +98,26 @@ const ButtonDemo = () => {
   );
 };
 
-const ButtonSpArea = ({ children }: { children: ReactNode }) => {
+const ButtonSpArea = ({
+  children,
+  style,
+}: {
+  children: ReactNode;
+  style?: any;
+}) => {
   return (
     <View
-      style={{
-        marginHorizontal: 'auto',
-        marginVertical: 15,
-        padding: 15,
-        flexDirection: 'column',
-        gap: 16,
-      }}
+      style={[
+        {
+          width: '100%',
+          marginHorizontal: 'auto',
+          marginBottom: 15,
+          padding: 15,
+          flexDirection: 'column',
+          gap: 16,
+        },
+        style,
+      ]}
     >
       {children}
     </View>
@@ -38,6 +126,9 @@ const ButtonSpArea = ({ children }: { children: ReactNode }) => {
 
 const styles = StyleSheet.create({
   container: {},
+  overlay: {
+    backgroundColor: '#07c160',
+  },
 });
 
 export default ButtonDemo;

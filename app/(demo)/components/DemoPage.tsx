@@ -1,9 +1,11 @@
 import { ReactNode } from 'react';
-import { View, Text, ViewStyle, StyleSheet } from 'react-native';
+import { View, Text, ViewStyle, StyleSheet, Animated } from 'react-native';
 import {
+  SafeAreaProvider,
   SafeAreaView,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import ScrollView = Animated.ScrollView;
 
 const DemoPage = ({
   children,
@@ -17,21 +19,23 @@ const DemoPage = ({
   style?: ViewStyle;
 }) => {
   return (
-    <SafeAreaView>
-      <View style={[styles.container, style]}>
+    <SafeAreaView style={[styles.container, style]}>
+      <ScrollView>
         <View style={styles.header}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.desc}>{desc}</Text>
         </View>
 
         <View style={styles.body}>{children}</View>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    flex: 1,
+  },
   header: {
     padding: 40,
     paddingTop: 20,
