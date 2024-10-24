@@ -9,9 +9,9 @@ import {
   ColorValue,
 } from 'react-native';
 import LoadingSpinner from '@/components/Button/LoadingSpinner';
-import useTheme from '@/components/style/theme/useTheme';
 import { ButtonProps } from '@/components/Button/ButtonType';
 import useButtonStyle from '@/components/Button/useButtonStyle';
+import useTheme from '@/components/style/theme/useTheme';
 
 const Button = ({
   children,
