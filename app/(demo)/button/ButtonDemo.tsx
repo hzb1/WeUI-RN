@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
 import DemoPage from '@/app/(demo)/components/DemoPage';
 import Button from '@/components/Button';
@@ -11,7 +11,9 @@ const ButtonDemo = () => {
         <ButtonSpArea>
           {/* 主要操作 start */}
           <Button type={'primary'}>主要操作</Button>
-          <Button type={'primary'} loading={true}></Button>
+          <Button type={'primary'} loading={true}>
+            主要操作
+          </Button>
           <Button type={'primary'} loading>
             主要操作
           </Button>
@@ -91,6 +93,28 @@ const ButtonDemo = () => {
           </Button>
           <Button type={'warn'} size={'mini'}>
             按钮
+          </Button>
+        </ButtonSpArea>
+
+        <ButtonSpArea>
+          <Button
+            type={'primary'}
+            style={{
+              width: 'auto',
+              height: 44,
+              paddingHorizontal: 18,
+              backgroundColor: 'rgba(33,150,243,1.00)',
+            }}
+          >
+            <Text
+              style={{
+                color: '#fff',
+                fontSize: 16,
+                fontWeight: 'bold',
+              }}
+            >
+              自定义样式
+            </Text>
           </Button>
         </ButtonSpArea>
       </View>

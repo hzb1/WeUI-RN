@@ -25,7 +25,6 @@ const LoadingSpinner = ({
       }),
     );
     spinAnimation.start();
-
     return () => spinAnimation.stop();
   }, [spinValue, duration]);
 

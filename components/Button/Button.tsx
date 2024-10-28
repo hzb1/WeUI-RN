@@ -1,17 +1,9 @@
 import React, { type ReactNode } from 'react';
-import {
-  Pressable,
-  PressableProps,
-  Text,
-  TextStyle,
-  View,
-  StyleSheet,
-  ColorValue,
-} from 'react-native';
-import LoadingSpinner from '@/components/Button/LoadingSpinner';
+import { Pressable, Text, TextStyle, ColorValue } from 'react-native';
+
 import { ButtonProps } from '@/components/Button/ButtonType';
+import LoadingSpinner from '@/components/Button/LoadingSpinner';
 import useButtonStyle from '@/components/Button/useButtonStyle';
-import useTheme from '@/components/style/theme/useTheme';
 
 const Button = ({
   children,
@@ -39,9 +31,9 @@ const Button = ({
 
   const onStyle = ({ pressed }: { pressed: boolean }) => {
     if (pressed) {
-      return activeStyle;
+      return [activeStyle, style];
     }
-    return buttonStyle;
+    return [buttonStyle, style];
   };
 
   return (
@@ -58,11 +50,9 @@ const Button = ({
             pressed={pressed}
             color={textStyle.color}
           />
-          <RenderChildren
-            children={children}
-            pressed={pressed}
-            textStyle={textStyle}
-          />
+          <RenderChildren pressed={pressed} textStyle={textStyle}>
+            {children}
+          </RenderChildren>
         </>
       )}
     </Pressable>

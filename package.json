@@ -11,11 +11,8 @@
     "build android preview": "eas build --platform android --profile preview",
     "build android": "eas build --platform android",
     "build web": "expo export --platform web",
-    "test": "jest --watchAll",
+    "test": "jest --watch --coverage=true",
     "lint": "expo lint"
-  },
-  "jest": {
-    "preset": "jest-expo"
   },
   "dependencies": {
     "@expo/vector-icons": "14.0.0",
@@ -55,7 +52,8 @@
     "jest-expo": "51.0.1",
     "prettier": "3.3.2",
     "react-test-renderer": "18.2.0",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "ts-node": "^10.9.2"
   },
   "private": true
 }

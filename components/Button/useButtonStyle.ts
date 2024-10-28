@@ -1,4 +1,4 @@
-import { ButtonProps } from '@/components/Button/ButtonType';
+import { useMemo } from 'react';
 import {
   ColorValue,
   PressableAndroidRippleConfig,
@@ -6,8 +6,9 @@ import {
   TextStyle,
   ViewStyle,
 } from 'react-native';
+
+import { ButtonProps } from '@/components/Button/ButtonType';
 import useTheme from '@/components/style/theme/useTheme';
-import { useMemo } from 'react';
 
 const useButtonStyle = ({
   type,
@@ -53,6 +54,7 @@ const useButtonStyle = ({
       color: textColor,
       fontSize: size === 'mini' ? 14 : 16,
       fontWeight: '500',
+      // backgroundColor: 'rgba(0,0,0,1)',
     };
   }, [textColor, size]);
 
@@ -106,8 +108,8 @@ const useButtonStyle = ({
       ...styles.btn,
       ...paddingStyle,
       backgroundColor,
-      height,
-      minHeight: height,
+      // height,
+      // minHeight: height,
       width: size === 'mini' ? 'auto' : 184,
       margin: size === 'mini' ? undefined : 'auto',
     };
