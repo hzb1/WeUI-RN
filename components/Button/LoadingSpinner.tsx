@@ -1,5 +1,12 @@
-import React, { useEffect, useRef } from 'react';
-import { View, Animated, Easing, ColorValue } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, ColorValue } from 'react-native';
+import Animated, {
+  Easing,
+  useSharedValue,
+  useAnimatedStyle,
+  withRepeat,
+  withTiming,
+} from 'react-native-reanimated';
 import Svg, { Circle, Defs, LinearGradient, Stop } from 'react-native-svg';
 
 // 定义组件并添加 props 支持
@@ -12,26 +19,24 @@ const LoadingSpinner = ({
   color?: ColorValue;
   duration?: number;
 }) => {
-  const spinValue = useRef(new Animated.Value(0)).current;
+  // 初始化旋转角度值
+  const rotation = useSharedValue(0);
 
-  // 动画效果
+  // 组件挂载时启动动画
   useEffect(() => {
-    const spinAnimation = Animated.loop(
-      Animated.timing(spinValue, {
-        toValue: 1,
-        duration,
-        easing: Easing.linear,
-        useNativeDriver: false,
-      }),
+    // 使用 withRepeat 和 withTiming 创建无限循环的动画
+    rotation.value = withRepeat(
+      withTiming(360, { duration, easing: Easing.linear }),
+      -1, // -1 表示无限次循环
+      false, // 不在每次循环中反向旋转
     );
-    spinAnimation.start();
-    return () => spinAnimation.stop();
-  }, [spinValue, duration]);
+  }, [duration, rotation]);
 
-  // 将 Animated 值转换为旋转动画
-  const spin = spinValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['0deg', '360deg'],
+  // 创建旋转样式
+  const animatedStyle = useAnimatedStyle(() => {
+    return {
+      transform: [{ rotate: `${rotation.value}deg` }],
+    };
   });
 
   // 半径和线宽根据大小动态调整
@@ -40,7 +45,7 @@ const LoadingSpinner = ({
 
   return (
     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-      <Animated.View style={{ transform: [{ rotate: spin }] }}>
+      <Animated.View style={[animatedStyle]}>
         <Svg height={size} width={size} viewBox={`0 0 ${size} ${size}`}>
           <Defs>
             <LinearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
