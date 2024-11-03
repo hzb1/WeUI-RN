@@ -1,2352 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Button 1`] = `
-<RNCSafeAreaView
-  edges={
-    {
-      "bottom": "additive",
-      "left": "additive",
-      "right": "additive",
-      "top": "additive",
-    }
-  }
-  style={
-    [
-      {
-        "flex": 1,
-      },
-      undefined,
-    ]
-  }
->
-  <RCTScrollView
-    collapsable={false}
-    scrollEventThrottle={0.0001}
-    style={{}}
-  >
-    <View>
-      <View
-        style={
-          {
-            "padding": 40,
-            "paddingTop": 20,
-          }
-        }
-      >
-        <Text
-          style={
-            {
-              "fontSize": 20,
-              "fontWeight": "400",
-              "textAlign": "left",
-            }
-          }
-        >
-          Button
-        </Text>
-        <Text
-          style={
-            {
-              "fontSize": 14,
-              "marginTop": 4,
-              "textAlign": "left",
-            }
-          }
-        >
-          按钮
-        </Text>
-      </View>
-      <View
-        style={{}}
-      >
-        <View
-          style={{}}
-        >
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                次要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -872415232,
-                              1,
-                              0,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              />
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -872415232,
-                              1,
-                              0,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                次要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                次要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                警示操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              />
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                警示操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                警示操作
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                medium 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                medium 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                medium 按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                {
-                  "backgroundColor": "#07c160",
-                },
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fff",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0,0,0,0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(247,247,247,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                {
-                  "backgroundColor": "#07c160",
-                },
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                {
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "gap": 12,
-                  "justifyContent": "center",
-                },
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  {
-                    "backgroundColor": "rgba(33,150,243,1.00)",
-                    "height": 44,
-                    "paddingHorizontal": 18,
-                    "width": "auto",
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                  }
-                }
-              >
-                自定义样式
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</RNCSafeAreaView>
-`;
-
 exports[`Button Button 演示测试 1`] = `
 <RNCSafeAreaView
   edges={
@@ -2455,30 +108,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#07c160",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -2516,21 +166,18 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#07c160",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <View
@@ -2645,14 +292,12 @@ exports[`Button Button 演示测试 1`] = `
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
-              >
-                主要操作
-              </Text>
+              />
             </View>
             <View
               accessibilityState={
@@ -2685,21 +330,18 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#07c160",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <View
@@ -2814,9 +456,9 @@ exports[`Button Button 演示测试 1`] = `
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -2854,30 +496,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -2915,30 +554,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -2976,21 +612,18 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <View
@@ -3105,9 +738,9 @@ exports[`Button Button 演示测试 1`] = `
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               />
@@ -3143,21 +776,18 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <View
@@ -3272,9 +902,9 @@ exports[`Button Button 演示测试 1`] = `
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -3312,30 +942,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -3373,30 +1000,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#fa5151",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -3434,21 +1058,18 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#fa5151",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <View
@@ -3563,9 +1184,9 @@ exports[`Button Button 演示测试 1`] = `
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               />
@@ -3601,21 +1222,18 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#fa5151",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <View
@@ -3730,9 +1348,9 @@ exports[`Button Button 演示测试 1`] = `
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -3770,30 +1388,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -3847,30 +1462,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#07c160",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 10,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 20,
                   }
                 }
               >
@@ -3908,30 +1520,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 10,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 20,
                   }
                 }
               >
@@ -3969,30 +1578,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#fa5151",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 10,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 20,
                   }
                 }
               >
@@ -4048,30 +1654,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fff",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#fff",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
-                    "color": "rgba(0,0,0,0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "color": "rgba(0,0,0,.9)",
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -4109,30 +1712,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(247,247,247,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "hsla(0,0%,97%,.3)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -4170,30 +1770,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#fa5151",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -4249,30 +1846,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "hsla(0,0%,100%,.3)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "color": "hsla(0,0%,97%,.3)",
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -4310,30 +1904,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "hsla(0,0%,100%,.3)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "color": "hsla(0,0%,97%,.3)",
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -4371,30 +1962,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "hsla(0,0%,100%,.3)",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text
                 style={
                   {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
+                    "color": "hsla(0,0%,97%,.3)",
+                    "fontSize": 17,
                     "fontWeight": "500",
+                    "lineHeight": 24.00000007,
                   }
                 }
               >
@@ -4453,2377 +2041,27 @@ exports[`Button Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  {
-                    "backgroundColor": "rgba(33,150,243,1.00)",
-                    "height": 44,
-                    "paddingHorizontal": 18,
-                    "width": "auto",
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                  }
-                }
-              >
-                自定义样式
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</RNCSafeAreaView>
-`;
-
-exports[`Button 演示测试 1`] = `
-<RNCSafeAreaView
-  edges={
-    {
-      "bottom": "additive",
-      "left": "additive",
-      "right": "additive",
-      "top": "additive",
-    }
-  }
-  style={
-    [
-      {
-        "flex": 1,
-      },
-      undefined,
-    ]
-  }
->
-  <RCTScrollView
-    collapsable={false}
-    scrollEventThrottle={0.0001}
-    style={{}}
-  >
-    <View>
-      <View
-        style={
-          {
-            "padding": 40,
-            "paddingTop": 20,
-          }
-        }
-      >
-        <Text
-          style={
-            {
-              "fontSize": 20,
-              "fontWeight": "400",
-              "textAlign": "left",
-            }
-          }
-        >
-          Button
-        </Text>
-        <Text
-          style={
-            {
-              "fontSize": 14,
-              "marginTop": 4,
-              "textAlign": "left",
-            }
-          }
-        >
-          按钮
-        </Text>
-      </View>
-      <View
-        style={{}}
-      >
-        <View
-          style={{}}
-        >
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                主要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                次要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -872415232,
-                              1,
-                              0,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              />
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -872415232,
-                              1,
-                              0,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                次要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                次要操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                警示操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              />
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <View
-                style={
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <View
-                  collapsable={false}
-                  jestAnimatedStyle={
-                    {
-                      "value": {
-                        "transform": [
-                          {
-                            "rotate": "0deg",
-                          },
-                        ],
-                      },
-                    }
-                  }
-                  style={
-                    {
-                      "transform": [
-                        {
-                          "rotate": "0deg",
-                        },
-                      ],
-                    }
-                  }
-                >
-                  <RNSVGSvgView
-                    align="xMidYMid"
-                    bbHeight={20}
-                    bbWidth={20}
-                    focusable={false}
-                    height={20}
-                    meetOrSlice={0}
-                    minX={0}
-                    minY={0}
-                    style={
-                      [
-                        {
-                          "backgroundColor": "transparent",
-                          "borderWidth": 0,
-                        },
-                        {
-                          "flex": 0,
-                          "height": 20,
-                          "width": 20,
-                        },
-                      ]
-                    }
-                    vbHeight={20}
-                    vbWidth={20}
-                    width={20}
-                  >
-                    <RNSVGGroup
-                      fill={
-                        {
-                          "payload": 4278190080,
-                          "type": 0,
-                        }
-                      }
-                    >
-                      <RNSVGDefs>
-                        <RNSVGLinearGradient
-                          gradient={
-                            [
-                              0,
-                              -855638017,
-                              1,
-                              16777215,
-                            ]
-                          }
-                          gradientTransform={null}
-                          gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
-                          y1="0%"
-                          y2="100%"
-                        />
-                      </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
-                        fill={null}
-                        propList={
-                          [
-                            "fill",
-                            "stroke",
-                            "strokeWidth",
-                          ]
-                        }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
-                          }
-                        }
-                        strokeWidth={2}
-                      />
-                    </RNSVGGroup>
-                  </RNSVGSvgView>
-                </View>
-              </View>
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                警示操作
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.15)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                警示操作
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                undefined,
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                medium 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                medium 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 10,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                medium 按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                {
-                  "backgroundColor": "#07c160",
-                },
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fff",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(0,0,0,0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(247,247,247,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
-                {
-                  "backgroundColor": "#07c160",
-                },
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": true,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(255,255,255,0.3)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  undefined,
-                ]
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "rgba(247,247,247,0.3)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  }
-                }
-              >
-                overlay 按钮
-              </Text>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "flexDirection": "column",
-                  "gap": 16,
-                  "marginBottom": 15,
-                  "marginHorizontal": "auto",
-                  "padding": 15,
-                  "width": "100%",
-                },
                 {
                   "alignItems": "center",
+                  "backgroundColor": "#07c160",
+                  "borderRadius": 6,
                   "flexDirection": "row",
-                  "gap": 12,
+                  "gap": 8,
                   "justifyContent": "center",
-                },
-              ]
-            }
-          >
-            <View
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 12,
+                  "paddingVertical": 6,
+                  "width": "auto",
                 }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
                     "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 19.999979999999997,
                   }
                 }
               >
@@ -6861,30 +2099,27 @@ exports[`Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(0, 0, 0, 0.05)",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.05)",
+                  "borderRadius": 6,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 12,
+                  "paddingVertical": 6,
+                  "width": "auto",
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "rgba(0, 0, 0, 0.9)",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
                     "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 19.999979999999997,
                   }
                 }
               >
@@ -6922,30 +2157,27 @@ exports[`Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#fa5151",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": undefined,
-                    "paddingHorizontal": 12,
-                    "paddingVertical": 6,
-                    "width": "auto",
-                  },
-                  undefined,
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#fa5151",
+                  "borderRadius": 6,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 12,
+                  "paddingVertical": 6,
+                  "width": "auto",
+                }
               }
             >
               <Text
                 style={
                   {
                     "color": "#fff",
-                    "fontFamily": "system-ui, -apple-system, "Helvetica Neue", sans-serif",
                     "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 19.999979999999997,
                   }
                 }
               >
@@ -6999,26 +2231,18 @@ exports[`Button 演示测试 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                [
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "#07c160",
-                    "borderRadius": 8,
-                    "flexDirection": "row",
-                    "gap": 8,
-                    "justifyContent": "center",
-                    "margin": "auto",
-                    "paddingHorizontal": 24,
-                    "paddingVertical": 12,
-                    "width": 184,
-                  },
-                  {
-                    "backgroundColor": "rgba(33,150,243,1.00)",
-                    "height": 44,
-                    "paddingHorizontal": 18,
-                    "width": "auto",
-                  },
-                ]
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#07c160",
+                  "borderRadius": 8,
+                  "flexDirection": "row",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "marginHorizontal": "auto",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                  "width": 184,
+                }
               }
             >
               <Text

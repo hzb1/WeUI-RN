@@ -6,5 +6,8 @@ module.exports = {
   rules: {
     "prettier/prettier": "warn",
     'import/no-unresolved': 'off',
+    "max-len": ["warn", { "code": 200 }],
+    "no-mixed-operators": "off",
+    "operator-linebreak": ["error", "before"]
   },
 };

@@ -1,5 +1,5 @@
-import { PressableProps, StyleProp, ViewStyle } from 'react-native';
 import type { ReactNode } from 'react';
+import { PressableProps, StyleProp, ViewStyle } from 'react-native';
 
 export interface ButtonProps extends PressableProps {
   // 类型
@@ -12,7 +12,7 @@ export interface ButtonProps extends PressableProps {
   loading?: boolean;
   children?: ReactNode;
   // 样式
-  style?: StyleProp<ViewStyle>;
+  style?: ViewStyle;
   // 按下时的样式
   pressedStyle?: StyleProp<ViewStyle>;
 }

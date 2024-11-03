@@ -3,7 +3,9 @@ import { Pressable, Text, TextStyle, ColorValue } from 'react-native';
 
 import { ButtonProps } from '@/components/Button/ButtonType';
 import LoadingSpinner from '@/components/Button/LoadingSpinner';
-import useButtonStyle from '@/components/Button/useButtonStyle';
+import getButtonStyle from '@/components/Button/getButtonStyle';
+import getTextStyle from '@/components/Button/getTextStyle';
+import useTheme from '@/components/style/theme/useTheme';
 
 const Button = ({
   children,
@@ -13,48 +15,45 @@ const Button = ({
   loading = false,
   type = 'default',
   size = 'default',
-  style,
-  pressedStyle,
 }: ButtonProps) => {
-  // const { children, onPress, style, disabled, type } = props;
-  // renderStyle, activeStyle
-  const { buttonStyle, activeStyle, textStyle, android_ripple } =
-    useButtonStyle({
-      type,
-      disabled,
-      loading,
-      style,
-      pressedStyle,
-      size,
-      overlay,
-    });
-
-  const onStyle = ({ pressed }: { pressed: boolean }) => {
-    if (pressed) {
-      return [activeStyle, style];
-    }
-    return [buttonStyle, style];
-  };
+  const themeStyle = useTheme();
 
   return (
     <Pressable
       onPress={onPress}
       disabled={disabled}
-      style={onStyle}
-      android_ripple={android_ripple}
+      style={({ pressed }) =>
+        getButtonStyle({
+          pressed: pressed && !loading,
+          type,
+          disabled,
+          size,
+          overlay,
+          themeStyle,
+        })
+      }
     >
-      {({ pressed }) => (
-        <>
-          <RenderLoading
-            loading={loading}
-            pressed={pressed}
-            color={textStyle.color}
-          />
-          <RenderChildren pressed={pressed} textStyle={textStyle}>
-            {children}
-          </RenderChildren>
-        </>
-      )}
+      {({ pressed }) => {
+        const textStyle = getTextStyle({
+          pressed: pressed && !loading,
+          type,
+          disabled,
+          size,
+          overlay,
+          themeStyle,
+        });
+        return (
+          <>
+            <RenderChildren
+              pressed={pressed}
+              loading={loading}
+              textStyle={textStyle}
+            >
+              {children}
+            </RenderChildren>
+          </>
+        );
+      }}
     </Pressable>
   );
 };
@@ -74,7 +73,7 @@ const RenderLoading = ({
   return null;
 };
 
-const RenderChildren = ({
+const RenderContent = ({
   children,
   textStyle,
 }: {
@@ -86,6 +85,31 @@ const RenderChildren = ({
     return children;
   }
   return <Text style={textStyle}>{children}</Text>;
+};
+
+const RenderChildren = ({
+  children,
+  pressed,
+  textStyle,
+  loading,
+}: {
+  children: ReactNode;
+  pressed: boolean;
+  textStyle: TextStyle;
+  loading: boolean;
+}) => {
+  return (
+    <>
+      <RenderLoading
+        loading={loading}
+        pressed={pressed}
+        color={textStyle.color}
+      />
+      <RenderContent textStyle={textStyle} pressed={pressed}>
+        {children}
+      </RenderContent>
+    </>
+  );
 };
 
 export default Button;

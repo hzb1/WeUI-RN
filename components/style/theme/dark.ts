@@ -154,6 +154,10 @@ const dark: Record<ThemeKey, string> = {
   'TAG-TEXT-ORANGE': 'rgba(250, 157, 59, 0.6)',
   'TAG-TEXT-GREEN': 'rgba(6, 174, 86, 0.6)',
   'TAG-TEXT-BLUE': 'rgba(16, 174, 255, 0.6)',
+
+  'BTN-HEIGHT': '48',
+  'BTN-HEIGHT-MEDIUM': '40',
+  'BTN-HEIGHT-SMALL': '32',
 };
 
 export default dark;

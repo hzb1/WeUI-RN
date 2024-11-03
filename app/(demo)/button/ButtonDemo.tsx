@@ -11,9 +11,7 @@ const ButtonDemo = () => {
         <ButtonSpArea>
           {/* 主要操作 start */}
           <Button type={'primary'}>主要操作</Button>
-          <Button type={'primary'} loading={true}>
-            主要操作
-          </Button>
+          <Button type={'primary'} loading={true}></Button>
           <Button type={'primary'} loading>
             主要操作
           </Button>

@@ -159,6 +159,11 @@ const light = {
   'TAG-TEXT-RED': 'rgba(250, 81, 81, 0.6)',
   'TAG-BACKGROUND-RED': 'rgba(250, 81, 81, 0.1)',
   'TAG-BACKGROUND-BLUE': 'rgba(16, 174, 255, 0.1)',
+
+  //
+  'BTN-HEIGHT': 48,
+  'BTN-HEIGHT-MEDIUM': 40,
+  'BTN-HEIGHT-SMALL': 32,
 };
 
 export default light;
