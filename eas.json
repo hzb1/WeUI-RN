@@ -4,7 +4,12 @@
     "appVersionSource": "remote"
   },
   "build": {
+    "base": {
+      "node": "20.11.0",
+      "yarn": "1.22.22"
+    },
     "development": {
+      "extends": "base",
       "developmentClient": true,
       "distribution": "internal"
     },
@@ -15,12 +20,15 @@
       }
     },
     "preview": {
+      "extends": "base",
+      "developmentClient": false,
       "android": {
         "buildType": "apk"
       },
       "distribution": "internal"
     },
     "production": {
+      "extends": "base",
       "developmentClient": true,
       "android": {
         "buildType": "apk"
