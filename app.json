@@ -34,7 +34,6 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "baseUrl": "/weui/dist"
     },
     "extra": {
       "router": {
