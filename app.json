@@ -25,7 +25,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
+      "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -34,6 +34,7 @@
     ],
     "experiments": {
       "typedRoutes": true,
+      "baseUrl": "https://github.com/hzb1/weui/blob/main/dist/"
     },
     "extra": {
       "router": {
