@@ -33,8 +33,7 @@
       "expo-font"
     ],
     "experiments": {
-      "typedRoutes": true,
-      "baseUrl": "https://github.com/hzb1/weui/blob/main/dist/"
+      "typedRoutes": true
     },
     "extra": {
       "router": {
