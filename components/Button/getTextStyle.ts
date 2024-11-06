@@ -55,6 +55,7 @@ const getStyles = (pressed: boolean, themeStyle: Record<ThemeKey, string>) =>
     btn_text: {
       fontSize: 17,
       fontWeight: '500',
+      // fontWeight: 'bold',
       color: '#fff',
       lineHeight: 17 * 1.41176471,
     },

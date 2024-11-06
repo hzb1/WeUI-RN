@@ -1,5 +1,12 @@
 import type { ReactNode } from 'react';
-import { PressableProps, StyleProp, ViewStyle } from 'react-native';
+import {
+  PressableProps,
+  StyleProp,
+  TextProps,
+  ViewProps,
+  TextStyle,
+  PressableStateCallbackType,
+} from 'react-native';
 
 export interface ButtonProps extends PressableProps {
   // 类型
@@ -11,8 +18,14 @@ export interface ButtonProps extends PressableProps {
   disabled?: boolean;
   loading?: boolean;
   children?: ReactNode;
-  // 样式
-  style?: ViewStyle;
-  // 按下时的样式
-  pressedStyle?: StyleProp<ViewStyle>;
+  // 按钮样式
+  // style?: ViewProps['style'];
+  // 按下时的按钮样式
+  // pressedStyle?: ViewProps['style'];
+  // 文字样式
+  textStyle?:
+    | TextProps['style']
+    | ((state: PressableStateCallbackType) => StyleProp<TextStyle>);
+  // 按下时的文字样式
+  pressedTextStyle?: TextProps['style'];
 }

@@ -1,6 +1,6 @@
 // @ts-ignore
 import Color from 'color';
-import { StyleProp, ViewStyle, StyleSheet } from 'react-native';
+import { StyleProp, ViewStyle, StyleSheet, ViewProps } from 'react-native';
 
 import { ButtonProps } from '@/components/Button/ButtonType';
 import { ThemeKey } from '@/components/style/theme';
@@ -30,6 +30,7 @@ const getButtonStyle = ({
   disabled,
   pressed,
   themeStyle,
+  style: buttonStyle,
 }: {
   type: 'primary' | 'default' | 'warn';
   size: NonNullable<ButtonProps['size']>;
@@ -37,6 +38,7 @@ const getButtonStyle = ({
   disabled: boolean;
   pressed: boolean;
   themeStyle: Record<ThemeKey, string>;
+  style?: ButtonProps['style'];
 }): ViewStyle => {
   const style = getStyles(pressed, themeStyle);
   const styleList: StyleProp<ViewStyle> = [
@@ -56,6 +58,14 @@ const getButtonStyle = ({
     styleList.push({
       backgroundColor: themeStyle['FG-5'],
     });
+  }
+
+  if (buttonStyle) {
+    const _buttonStyle =
+      typeof buttonStyle === 'function'
+        ? buttonStyle({ pressed })
+        : buttonStyle;
+    styleList.push(_buttonStyle);
   }
 
   return StyleSheet.flatten(styleList);
@@ -101,6 +111,7 @@ const getStyles = (pressed: boolean, themeStyle: Record<ThemeKey, string>) =>
       paddingHorizontal: 12,
       borderRadius: 6,
       width: 'auto',
+      // flexGrow: 1,
     },
 
     // disabled

@@ -15,6 +15,7 @@ const Button = ({
   loading = false,
   type = 'default',
   size = 'default',
+  style,
 }: ButtonProps) => {
   const themeStyle = useTheme();
 
@@ -30,6 +31,7 @@ const Button = ({
           size,
           overlay,
           themeStyle,
+          style,
         })
       }
     >

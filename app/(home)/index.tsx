@@ -130,7 +130,7 @@ const Index = () => {
         },
         {
           name: 'Dialog',
-          url: 'https://weui.io/0.4.x/#/example/dialog',
+          url: '/dialog',
         },
         {
           name: 'Half-screen Dialog',

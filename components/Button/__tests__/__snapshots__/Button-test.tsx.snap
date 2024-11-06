@@ -215,6 +215,7 @@ exports[`Button Button 演示测试 1`] = `
                     align="xMidYMid"
                     bbHeight={20}
                     bbWidth={20}
+                    color="#fff"
                     focusable={false}
                     height={20}
                     meetOrSlice={0}
@@ -233,9 +234,12 @@ exports[`Button Button 演示测试 1`] = `
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={20}
+                    tintColor="#fff"
+                    vbHeight={80}
+                    vbWidth={80}
                     width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
                     <RNSVGGroup
                       fill={
@@ -250,40 +254,107 @@ exports[`Button Button 演示测试 1`] = `
                           gradient={
                             [
                               0,
-                              -855638017,
-                              1,
                               16777215,
+                              1,
+                              1308622847,
                             ]
                           }
                           gradientTransform={null}
                           gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
+                          name="linearGradient-1"
+                          x1="94.0869141%"
+                          x2="94.0869141%"
                           y1="0%"
-                          y2="100%"
+                          y2="90.559082%"
+                        />
+                        <RNSVGLinearGradient
+                          gradient={
+                            [
+                              0,
+                              -1,
+                              1,
+                              1308622847,
+                            ]
+                          }
+                          gradientTransform={null}
+                          gradientUnits={0}
+                          name="linearGradient-2"
+                          x1="100%"
+                          x2="100%"
+                          y1="8.67370605%"
+                          y2="90.6286621%"
                         />
                       </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
+                      <RNSVGGroup
                         fill={null}
+                        fillRule={0}
+                        opacity={0.9}
                         propList={
                           [
                             "fill",
+                            "fillRule",
                             "stroke",
                             "strokeWidth",
                           ]
                         }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
+                        stroke={null}
+                        strokeWidth={1}
+                      >
+                        <RNSVGGroup
+                          fill={
+                            {
+                              "payload": 4278190080,
+                              "type": 0,
+                            }
                           }
-                        }
-                        strokeWidth={2}
-                      />
+                        >
+                          <RNSVGPath
+                            d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 L40,73 C58.2253967,73 73,58.2253967 73,40 C73,21.7746033 58.2253967,7 40,7 L40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-1",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGPath
+                            d="M40,0 L40,7 C21.7746033,7 7,21.7746033 7,40 C7,58.2253967 21.7746033,73 40,73 L40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-2",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGCircle
+                            cx={40.5}
+                            cy={3.5}
+                            fill={
+                              {
+                                "payload": 4294967295,
+                                "type": 0,
+                              }
+                            }
+                            name="Oval"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            r={3.5}
+                          />
+                        </RNSVGGroup>
+                      </RNSVGGroup>
                     </RNSVGGroup>
                   </RNSVGSvgView>
                 </View>
@@ -379,6 +450,7 @@ exports[`Button Button 演示测试 1`] = `
                     align="xMidYMid"
                     bbHeight={20}
                     bbWidth={20}
+                    color="#fff"
                     focusable={false}
                     height={20}
                     meetOrSlice={0}
@@ -397,9 +469,12 @@ exports[`Button Button 演示测试 1`] = `
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={20}
+                    tintColor="#fff"
+                    vbHeight={80}
+                    vbWidth={80}
                     width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
                     <RNSVGGroup
                       fill={
@@ -414,40 +489,107 @@ exports[`Button Button 演示测试 1`] = `
                           gradient={
                             [
                               0,
-                              -855638017,
-                              1,
                               16777215,
+                              1,
+                              1308622847,
                             ]
                           }
                           gradientTransform={null}
                           gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
+                          name="linearGradient-1"
+                          x1="94.0869141%"
+                          x2="94.0869141%"
                           y1="0%"
-                          y2="100%"
+                          y2="90.559082%"
+                        />
+                        <RNSVGLinearGradient
+                          gradient={
+                            [
+                              0,
+                              -1,
+                              1,
+                              1308622847,
+                            ]
+                          }
+                          gradientTransform={null}
+                          gradientUnits={0}
+                          name="linearGradient-2"
+                          x1="100%"
+                          x2="100%"
+                          y1="8.67370605%"
+                          y2="90.6286621%"
                         />
                       </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
+                      <RNSVGGroup
                         fill={null}
+                        fillRule={0}
+                        opacity={0.9}
                         propList={
                           [
                             "fill",
+                            "fillRule",
                             "stroke",
                             "strokeWidth",
                           ]
                         }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
+                        stroke={null}
+                        strokeWidth={1}
+                      >
+                        <RNSVGGroup
+                          fill={
+                            {
+                              "payload": 4278190080,
+                              "type": 0,
+                            }
                           }
-                        }
-                        strokeWidth={2}
-                      />
+                        >
+                          <RNSVGPath
+                            d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 L40,73 C58.2253967,73 73,58.2253967 73,40 C73,21.7746033 58.2253967,7 40,7 L40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-1",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGPath
+                            d="M40,0 L40,7 C21.7746033,7 7,21.7746033 7,40 C7,58.2253967 21.7746033,73 40,73 L40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-2",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGCircle
+                            cx={40.5}
+                            cy={3.5}
+                            fill={
+                              {
+                                "payload": 4294967295,
+                                "type": 0,
+                              }
+                            }
+                            name="Oval"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            r={3.5}
+                          />
+                        </RNSVGGroup>
+                      </RNSVGGroup>
                     </RNSVGGroup>
                   </RNSVGSvgView>
                 </View>
@@ -661,6 +803,7 @@ exports[`Button Button 演示测试 1`] = `
                     align="xMidYMid"
                     bbHeight={20}
                     bbWidth={20}
+                    color="rgba(0, 0, 0, 0.9)"
                     focusable={false}
                     height={20}
                     meetOrSlice={0}
@@ -679,9 +822,12 @@ exports[`Button Button 演示测试 1`] = `
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={20}
+                    tintColor="rgba(0, 0, 0, 0.9)"
+                    vbHeight={80}
+                    vbWidth={80}
                     width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
                     <RNSVGGroup
                       fill={
@@ -696,40 +842,107 @@ exports[`Button Button 演示测试 1`] = `
                           gradient={
                             [
                               0,
-                              -872415232,
-                              1,
                               0,
+                              1,
+                              1291845632,
                             ]
                           }
                           gradientTransform={null}
                           gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
+                          name="linearGradient-1"
+                          x1="94.0869141%"
+                          x2="94.0869141%"
                           y1="0%"
-                          y2="100%"
+                          y2="90.559082%"
+                        />
+                        <RNSVGLinearGradient
+                          gradient={
+                            [
+                              0,
+                              -16777216,
+                              1,
+                              1291845632,
+                            ]
+                          }
+                          gradientTransform={null}
+                          gradientUnits={0}
+                          name="linearGradient-2"
+                          x1="100%"
+                          x2="100%"
+                          y1="8.67370605%"
+                          y2="90.6286621%"
                         />
                       </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
+                      <RNSVGGroup
                         fill={null}
+                        fillRule={0}
+                        opacity={0.9}
                         propList={
                           [
                             "fill",
+                            "fillRule",
                             "stroke",
                             "strokeWidth",
                           ]
                         }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
+                        stroke={null}
+                        strokeWidth={1}
+                      >
+                        <RNSVGGroup
+                          fill={
+                            {
+                              "payload": 4278190080,
+                              "type": 0,
+                            }
                           }
-                        }
-                        strokeWidth={2}
-                      />
+                        >
+                          <RNSVGPath
+                            d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 L40,73 C58.2253967,73 73,58.2253967 73,40 C73,21.7746033 58.2253967,7 40,7 L40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-1",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGPath
+                            d="M40,0 L40,7 C21.7746033,7 7,21.7746033 7,40 C7,58.2253967 21.7746033,73 40,73 L40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-2",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGCircle
+                            cx={40.5}
+                            cy={3.5}
+                            fill={
+                              {
+                                "payload": 3858759680,
+                                "type": 0,
+                              }
+                            }
+                            name="Oval"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            r={3.5}
+                          />
+                        </RNSVGGroup>
+                      </RNSVGGroup>
                     </RNSVGGroup>
                   </RNSVGSvgView>
                 </View>
@@ -825,6 +1038,7 @@ exports[`Button Button 演示测试 1`] = `
                     align="xMidYMid"
                     bbHeight={20}
                     bbWidth={20}
+                    color="rgba(0, 0, 0, 0.9)"
                     focusable={false}
                     height={20}
                     meetOrSlice={0}
@@ -843,9 +1057,12 @@ exports[`Button Button 演示测试 1`] = `
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={20}
+                    tintColor="rgba(0, 0, 0, 0.9)"
+                    vbHeight={80}
+                    vbWidth={80}
                     width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
                     <RNSVGGroup
                       fill={
@@ -860,40 +1077,107 @@ exports[`Button Button 演示测试 1`] = `
                           gradient={
                             [
                               0,
-                              -872415232,
-                              1,
                               0,
+                              1,
+                              1291845632,
                             ]
                           }
                           gradientTransform={null}
                           gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
+                          name="linearGradient-1"
+                          x1="94.0869141%"
+                          x2="94.0869141%"
                           y1="0%"
-                          y2="100%"
+                          y2="90.559082%"
+                        />
+                        <RNSVGLinearGradient
+                          gradient={
+                            [
+                              0,
+                              -16777216,
+                              1,
+                              1291845632,
+                            ]
+                          }
+                          gradientTransform={null}
+                          gradientUnits={0}
+                          name="linearGradient-2"
+                          x1="100%"
+                          x2="100%"
+                          y1="8.67370605%"
+                          y2="90.6286621%"
                         />
                       </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
+                      <RNSVGGroup
                         fill={null}
+                        fillRule={0}
+                        opacity={0.9}
                         propList={
                           [
                             "fill",
+                            "fillRule",
                             "stroke",
                             "strokeWidth",
                           ]
                         }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
+                        stroke={null}
+                        strokeWidth={1}
+                      >
+                        <RNSVGGroup
+                          fill={
+                            {
+                              "payload": 4278190080,
+                              "type": 0,
+                            }
                           }
-                        }
-                        strokeWidth={2}
-                      />
+                        >
+                          <RNSVGPath
+                            d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 L40,73 C58.2253967,73 73,58.2253967 73,40 C73,21.7746033 58.2253967,7 40,7 L40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-1",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGPath
+                            d="M40,0 L40,7 C21.7746033,7 7,21.7746033 7,40 C7,58.2253967 21.7746033,73 40,73 L40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-2",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGCircle
+                            cx={40.5}
+                            cy={3.5}
+                            fill={
+                              {
+                                "payload": 3858759680,
+                                "type": 0,
+                              }
+                            }
+                            name="Oval"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            r={3.5}
+                          />
+                        </RNSVGGroup>
+                      </RNSVGGroup>
                     </RNSVGGroup>
                   </RNSVGSvgView>
                 </View>
@@ -1107,6 +1391,7 @@ exports[`Button Button 演示测试 1`] = `
                     align="xMidYMid"
                     bbHeight={20}
                     bbWidth={20}
+                    color="#fff"
                     focusable={false}
                     height={20}
                     meetOrSlice={0}
@@ -1125,9 +1410,12 @@ exports[`Button Button 演示测试 1`] = `
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={20}
+                    tintColor="#fff"
+                    vbHeight={80}
+                    vbWidth={80}
                     width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
                     <RNSVGGroup
                       fill={
@@ -1142,40 +1430,107 @@ exports[`Button Button 演示测试 1`] = `
                           gradient={
                             [
                               0,
-                              -855638017,
-                              1,
                               16777215,
+                              1,
+                              1308622847,
                             ]
                           }
                           gradientTransform={null}
                           gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
+                          name="linearGradient-1"
+                          x1="94.0869141%"
+                          x2="94.0869141%"
                           y1="0%"
-                          y2="100%"
+                          y2="90.559082%"
+                        />
+                        <RNSVGLinearGradient
+                          gradient={
+                            [
+                              0,
+                              -1,
+                              1,
+                              1308622847,
+                            ]
+                          }
+                          gradientTransform={null}
+                          gradientUnits={0}
+                          name="linearGradient-2"
+                          x1="100%"
+                          x2="100%"
+                          y1="8.67370605%"
+                          y2="90.6286621%"
                         />
                       </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
+                      <RNSVGGroup
                         fill={null}
+                        fillRule={0}
+                        opacity={0.9}
                         propList={
                           [
                             "fill",
+                            "fillRule",
                             "stroke",
                             "strokeWidth",
                           ]
                         }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
+                        stroke={null}
+                        strokeWidth={1}
+                      >
+                        <RNSVGGroup
+                          fill={
+                            {
+                              "payload": 4278190080,
+                              "type": 0,
+                            }
                           }
-                        }
-                        strokeWidth={2}
-                      />
+                        >
+                          <RNSVGPath
+                            d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 L40,73 C58.2253967,73 73,58.2253967 73,40 C73,21.7746033 58.2253967,7 40,7 L40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-1",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGPath
+                            d="M40,0 L40,7 C21.7746033,7 7,21.7746033 7,40 C7,58.2253967 21.7746033,73 40,73 L40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-2",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGCircle
+                            cx={40.5}
+                            cy={3.5}
+                            fill={
+                              {
+                                "payload": 4294967295,
+                                "type": 0,
+                              }
+                            }
+                            name="Oval"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            r={3.5}
+                          />
+                        </RNSVGGroup>
+                      </RNSVGGroup>
                     </RNSVGGroup>
                   </RNSVGSvgView>
                 </View>
@@ -1271,6 +1626,7 @@ exports[`Button Button 演示测试 1`] = `
                     align="xMidYMid"
                     bbHeight={20}
                     bbWidth={20}
+                    color="#fff"
                     focusable={false}
                     height={20}
                     meetOrSlice={0}
@@ -1289,9 +1645,12 @@ exports[`Button Button 演示测试 1`] = `
                         },
                       ]
                     }
-                    vbHeight={20}
-                    vbWidth={20}
+                    tintColor="#fff"
+                    vbHeight={80}
+                    vbWidth={80}
                     width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
                     <RNSVGGroup
                       fill={
@@ -1306,40 +1665,107 @@ exports[`Button Button 演示测试 1`] = `
                           gradient={
                             [
                               0,
-                              -855638017,
-                              1,
                               16777215,
+                              1,
+                              1308622847,
                             ]
                           }
                           gradientTransform={null}
                           gradientUnits={0}
-                          name="grad"
-                          x1="0%"
-                          x2="0%"
+                          name="linearGradient-1"
+                          x1="94.0869141%"
+                          x2="94.0869141%"
                           y1="0%"
-                          y2="100%"
+                          y2="90.559082%"
+                        />
+                        <RNSVGLinearGradient
+                          gradient={
+                            [
+                              0,
+                              -1,
+                              1,
+                              1308622847,
+                            ]
+                          }
+                          gradientTransform={null}
+                          gradientUnits={0}
+                          name="linearGradient-2"
+                          x1="100%"
+                          x2="100%"
+                          y1="8.67370605%"
+                          y2="90.6286621%"
                         />
                       </RNSVGDefs>
-                      <RNSVGCircle
-                        cx={10}
-                        cy={10}
+                      <RNSVGGroup
                         fill={null}
+                        fillRule={0}
+                        opacity={0.9}
                         propList={
                           [
                             "fill",
+                            "fillRule",
                             "stroke",
                             "strokeWidth",
                           ]
                         }
-                        r={8}
-                        stroke={
-                          {
-                            "brushRef": "grad",
-                            "type": 1,
+                        stroke={null}
+                        strokeWidth={1}
+                      >
+                        <RNSVGGroup
+                          fill={
+                            {
+                              "payload": 4278190080,
+                              "type": 0,
+                            }
                           }
-                        }
-                        strokeWidth={2}
-                      />
+                        >
+                          <RNSVGPath
+                            d="M40,0 C62.09139,0 80,17.90861 80,40 C80,62.09139 62.09139,80 40,80 L40,73 C58.2253967,73 73,58.2253967 73,40 C73,21.7746033 58.2253967,7 40,7 L40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-1",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGPath
+                            d="M40,0 L40,7 C21.7746033,7 7,21.7746033 7,40 C7,58.2253967 21.7746033,73 40,73 L40,80 C17.90861,80 0,62.09139 0,40 C0,17.90861 17.90861,0 40,0 Z"
+                            fill={
+                              {
+                                "brushRef": "linearGradient-2",
+                                "type": 1,
+                              }
+                            }
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                          />
+                          <RNSVGCircle
+                            cx={40.5}
+                            cy={3.5}
+                            fill={
+                              {
+                                "payload": 4294967295,
+                                "type": 0,
+                              }
+                            }
+                            name="Oval"
+                            propList={
+                              [
+                                "fill",
+                              ]
+                            }
+                            r={3.5}
+                          />
+                        </RNSVGGroup>
+                      </RNSVGGroup>
                     </RNSVGGroup>
                   </RNSVGSvgView>
                 </View>
@@ -2004,7 +2430,7 @@ exports[`Button Button 演示测试 1`] = `
                 {
                   "alignItems": "center",
                   "flexDirection": "row",
-                  "gap": 12,
+                  "gap": 24,
                   "justifyContent": "center",
                 },
               ]
@@ -2048,7 +2474,7 @@ exports[`Button Button 演示测试 1`] = `
                   "flexDirection": "row",
                   "gap": 8,
                   "justifyContent": "center",
-                  "marginHorizontal": "auto",
+                  "marginHorizontal": 0,
                   "paddingHorizontal": 12,
                   "paddingVertical": 6,
                   "width": "auto",
@@ -2106,7 +2532,7 @@ exports[`Button Button 演示测试 1`] = `
                   "flexDirection": "row",
                   "gap": 8,
                   "justifyContent": "center",
-                  "marginHorizontal": "auto",
+                  "marginHorizontal": 0,
                   "paddingHorizontal": 12,
                   "paddingVertical": 6,
                   "width": "auto",
@@ -2164,7 +2590,7 @@ exports[`Button Button 演示测试 1`] = `
                   "flexDirection": "row",
                   "gap": 8,
                   "justifyContent": "center",
-                  "marginHorizontal": "auto",
+                  "marginHorizontal": 0,
                   "paddingHorizontal": 12,
                   "paddingVertical": 6,
                   "width": "auto",
@@ -2233,15 +2659,16 @@ exports[`Button Button 演示测试 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#07c160",
+                  "backgroundColor": "rgba(33,150,243,1.00)",
                   "borderRadius": 8,
                   "flexDirection": "row",
                   "gap": 8,
+                  "height": 44,
                   "justifyContent": "center",
                   "marginHorizontal": "auto",
-                  "paddingHorizontal": 24,
+                  "paddingHorizontal": 18,
                   "paddingVertical": 12,
-                  "width": 184,
+                  "width": "auto",
                 }
               }
             >

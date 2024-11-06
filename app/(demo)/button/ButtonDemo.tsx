@@ -80,16 +80,24 @@ const ButtonDemo = () => {
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: 12,
+            gap: 24,
           }}
         >
-          <Button type={'primary'} size={'mini'}>
+          <Button
+            type={'primary'}
+            size={'mini'}
+            style={{ marginHorizontal: 0 }}
+          >
             按钮
           </Button>
-          <Button type={'default'} size={'mini'}>
+          <Button
+            type={'default'}
+            size={'mini'}
+            style={{ marginHorizontal: 0 }}
+          >
             按钮
           </Button>
-          <Button type={'warn'} size={'mini'}>
+          <Button type={'warn'} size={'mini'} style={{ marginHorizontal: 0 }}>
             按钮
           </Button>
         </ButtonSpArea>
@@ -97,11 +105,15 @@ const ButtonDemo = () => {
         <ButtonSpArea>
           <Button
             type={'primary'}
-            style={{
-              width: 'auto',
-              height: 44,
-              paddingHorizontal: 18,
-              backgroundColor: 'rgba(33,150,243,1.00)',
+            style={({ pressed }) => {
+              return {
+                width: 'auto',
+                height: 44,
+                paddingHorizontal: 18,
+                backgroundColor: pressed
+                  ? '#1A79C5FF'
+                  : 'rgba(33,150,243,1.00)',
+              };
             }}
           >
             <Text

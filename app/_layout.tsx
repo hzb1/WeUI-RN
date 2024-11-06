@@ -13,10 +13,12 @@ export default function RootLayout() {
         name="(demo)/button/index"
         options={{
           headerShown: false,
-          // headerBackTitle: '返回',
-          // title: '',
-          // fullScreenGestureEnabled: true,
-          // navigationBarHidden: true,
+        }}
+      />
+      <Stack.Screen
+        name="(demo)/dialog/index"
+        options={{
+          headerShown: false,
         }}
       />
     </Stack>
