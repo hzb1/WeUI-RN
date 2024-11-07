@@ -42,23 +42,23 @@ const Index = () => {
         },
         {
           name: 'Form',
-          url: 'https://weui.io/0.4.x/#/example/button',
+          url: 'https://weui.io/form',
         },
         {
           name: 'Input',
-          url: 'https://weui.io/0.4.x/#/example/input',
+          url: 'https://weui.io/#input',
         },
         {
           name: 'List',
-          url: 'https://weui.io/0.4.x/#/example/list',
+          url: 'https://weui.io/#list',
         },
         {
           name: 'Slider',
-          url: 'https://weui.io/0.4.x/#/example/slider',
+          url: 'https://weui.io/#slider',
         },
         {
           name: 'Uploader',
-          url: 'https://weui.io/0.4.x/#/example/uploader',
+          url: 'https://weui.io/#uploader',
         },
       ],
     },
@@ -68,55 +68,55 @@ const Index = () => {
       items: [
         {
           name: 'Article',
-          url: 'https://weui.io/0.4.x/#/example/article',
+          url: 'https://weui.io/#article',
         },
         {
           name: 'Badge',
-          url: 'https://weui.io/0.4.x/#/example/badge',
+          url: 'https://weui.io/#badge',
         },
         {
           name: 'Flex',
-          url: 'https://weui.io/0.4.x/#/example/flex',
+          url: 'https://weui.io/#flex',
         },
         {
           name: 'Footer',
-          url: 'https://weui.io/0.4.x/#/example/footer',
+          url: 'https://weui.io/#footer',
         },
         {
           name: 'Gallery',
-          url: 'https://weui.io/0.4.x/#/example/gallery',
+          url: 'https://weui.io/#gallery',
         },
         {
           name: 'Grid',
-          url: 'https://weui.io/0.4.x/#/example/grid',
+          url: 'https://weui.io/#grid',
         },
         {
           name: 'Icons',
-          url: 'https://weui.io/0.4.x/#/example/icons',
+          url: 'https://weui.io/#icons',
         },
         {
           name: 'Loading',
-          url: 'https://weui.io/0.4.x/#/example/loadmore',
+          url: 'https://weui.io/#loadmore',
         },
         {
           name: 'Loadmore',
-          url: 'https://weui.io/0.4.x/#/example/loadmore',
+          url: 'https://weui.io/#loadmore',
         },
         {
           name: 'Panel',
-          url: 'https://weui.io/0.4.x/#/example/panel',
+          url: 'https://weui.io/#panel',
         },
         {
           name: 'Preview',
-          url: 'https://weui.io/0.4.x/#/example/preview',
+          url: 'https://weui.io/#preview',
         },
         {
           name: 'Progress',
-          url: 'https://weui.io/0.4.x/#/example/progress',
+          url: 'https://weui.io/#progress',
         },
         {
           name: 'Steps',
-          url: 'https://weui.io/0.4.x/#/example/steps',
+          url: 'https://weui.io/#steps',
         },
       ],
     },
@@ -126,7 +126,7 @@ const Index = () => {
       items: [
         {
           name: 'Actionsheet',
-          url: 'https://weui.io/0.4.x/#/example/actionsheet',
+          url: 'https://weui.io/#actionsheet',
         },
         {
           name: 'Dialog',
@@ -134,19 +134,19 @@ const Index = () => {
         },
         {
           name: 'Half-screen Dialog',
-          url: 'https://weui.io/0.4.x/#/example/half-screen-dialog',
+          url: 'https://weui.io/#half-screen-dialog',
         },
         {
           name: 'Msg',
-          url: 'https://weui.io/0.4.x/#/example/msg',
+          url: 'https://weui.io/#msg',
         },
         {
           name: 'Picker',
-          url: 'https://weui.io/0.4.x/#/example/picker',
+          url: 'https://weui.io/#picker',
         },
         {
           name: 'Toast',
-          url: 'https://weui.io/0.4.x/#/example/toast',
+          url: 'https://weui.io/#toast',
         },
       ],
     },
@@ -156,11 +156,11 @@ const Index = () => {
       items: [
         {
           name: 'Navbar',
-          url: 'https://weui.io/0.4.x/#/example/navbar',
+          url: 'https://weui.io/#navbar',
         },
         {
           name: 'Tabbar',
-          url: 'https://weui.io/0.4.x/#/example/tabbar',
+          url: 'https://weui.io/#tabbar',
         },
       ],
     },
@@ -170,7 +170,7 @@ const Index = () => {
       items: [
         {
           name: 'Search Bar',
-          url: 'https://weui.io/0.4.x/#/example/search-bar',
+          url: 'https://weui.io/#search-bar',
         },
       ],
     },

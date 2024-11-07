@@ -13,47 +13,73 @@ import Mask from '@/components/Mask';
 import useTheme from '@/components/style/theme/useTheme';
 
 interface DialogProps extends ModalProps {
+  title?: string;
+  content?: string;
+  onClose: () => void;
+  onConfirm: () => void;
+  onCancel: () => void;
   onMaskPress?: () => void;
+  // 操作栏方向，默认为水平方向
+  actionDirection?: 'horizontal' | 'vertical';
 }
 
-const Dialog = ({ visible, onMaskPress }: DialogProps) => {
+const Dialog = (props: DialogProps) => {
+  const {
+    title,
+    content,
+    actionDirection,
+    onClose,
+    onMaskPress,
+    onCancel,
+    onConfirm,
+    ...modalProps
+  } = props;
   const styles = useStyles();
 
   return (
     <Modal
       animationType="fade"
       transparent={true}
-      visible={visible}
-      // onRequestClose={() => {
-      //   setModalVisible(!modalVisible);
-      // }}
+      onRequestClose={onClose}
+      {...modalProps}
     >
-      <Mask style={styles.dialogMask} onPress={onMaskPress}>
+      <View style={styles.dialogMask}>
+        {props.visible && <Mask onPress={onMaskPress}></Mask>}
         <View style={styles.dialog}>
           <View style={styles.dialog__hd}>
-            <Text style={styles.dialog__title}>弹窗标题</Text>
+            <Text style={styles.dialog__title}>{title}</Text>
           </View>
 
           <View style={styles.dialog__bd}>
-            <Text style={styles.dialog__content}>
-              弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内
-            </Text>
+            <Text style={styles.dialog__content}>{content}</Text>
           </View>
 
-          <View style={styles.dialog__ft}>
+          <View
+            style={[
+              styles.dialog__ft,
+              {
+                flexDirection:
+                  actionDirection === 'vertical' ? 'column' : 'row',
+              },
+            ]}
+          >
             <Pressable
+              onPress={onCancel}
               style={({ pressed }) => {
                 return [styles.dialog__btn, styles.dialog__btnDefault];
               }}
             >
               <Text style={styles.dialog__btnDefaultText}>辅助操作</Text>
             </Pressable>
-            <Pressable style={[styles.dialog__btn, styles.dialog__btnPrimary]}>
+            <Pressable
+              style={[styles.dialog__btn, styles.dialog__btnPrimary]}
+              onPress={onConfirm}
+            >
               <Text style={styles.dialog__btnPrimaryText}>主操作</Text>
             </Pressable>
           </View>
         </View>
-      </Mask>
+      </View>
     </Modal>
   );
 };
@@ -63,6 +89,7 @@ const useStyles = () => {
 
   return StyleSheet.create({
     dialogMask: {
+      flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
     },

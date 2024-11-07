@@ -1,5 +1,16 @@
-import { ReactNode } from 'react';
-import { Pressable, StyleProp, View, ViewStyle } from 'react-native';
+import { forwardRef, ReactNode, useEffect, useCallback } from 'react';
+import {
+  GestureResponderEvent,
+  Pressable,
+  StyleProp,
+  View,
+  ViewStyle,
+} from 'react-native';
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  withTiming,
+} from 'react-native-reanimated';
 
 const Mask = ({
   children,
@@ -7,14 +18,35 @@ const Mask = ({
   style,
 }: {
   children?: ReactNode;
-  onPress?: () => void;
+  onPress?: (e: GestureResponderEvent) => void;
   style?: StyleProp<ViewStyle>;
 }) => {
+  const opacity = useSharedValue(1);
+
+  const fadeIn = useCallback(() => {
+    opacity.value = withTiming(1, { duration: 10200 });
+  }, [opacity]);
+
+  const fadeOut = useCallback(() => {
+    opacity.value = withTiming(0, { duration: 10200 });
+  }, [opacity]);
+
+  // useEffect(() => {
+  //   fadeIn();
+  //   return () => {
+  //     fadeOut();
+  //   };
+  // }, [fadeIn, fadeOut]);
+
+  // const animatedStyles = useAnimatedStyle(() => ({
+  //   opacity: opacity.value,
+  // }));
+
   return (
-    <Pressable
-      onPress={onPress}
+    <Animated.View
       style={[
         {
+          flex: 1,
           position: 'absolute',
           top: 0,
           left: 0,
@@ -23,11 +55,18 @@ const Mask = ({
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           zIndex: 1000,
         },
-        style,
+        // animatedStyles,
       ]}
     >
-      {children}
-    </Pressable>
+      <Pressable
+        onPress={onPress}
+        style={[
+          {
+            flex: 1,
+          },
+        ]}
+      ></Pressable>
+    </Animated.View>
   );
 };
 

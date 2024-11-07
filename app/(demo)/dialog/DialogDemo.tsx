@@ -9,6 +9,7 @@ import useTheme from '@/components/style/theme/useTheme';
 
 const DialogDemo = () => {
   const [modalVisible, setModalVisible] = useState(false);
+  const [modalVisible2, setModalVisible2] = useState(false);
 
   const showDialog = () => {
     setModalVisible(true);
@@ -24,7 +25,32 @@ const DialogDemo = () => {
         </View>
       </View>
 
-      <Dialog visible={modalVisible} />
+      {/*样式一*/}
+      <Dialog
+        visible={modalVisible}
+        title={'弹窗标题'}
+        content={
+          '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内'
+        }
+        onClose={() => setModalVisible(false)}
+        onMaskPress={() => setModalVisible(false)}
+        onConfirm={() => setModalVisible(false)}
+        onCancel={() => setModalVisible(false)}
+      />
+
+      {/*样式二*/}
+
+      <Dialog
+        visible={modalVisible2}
+        title={'弹窗标题'}
+        content={
+          '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内'
+        }
+        onClose={() => setModalVisible(false)}
+        onMaskPress={() => setModalVisible(false)}
+        onConfirm={() => setModalVisible(false)}
+        onCancel={() => setModalVisible(false)}
+      />
     </DemoPage>
   );
 };
