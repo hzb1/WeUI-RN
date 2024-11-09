@@ -13,11 +13,17 @@ import Mask from '@/components/Mask';
 import useTheme from '@/components/style/theme/useTheme';
 
 interface DialogProps extends ModalProps {
+  // 标题
   title?: string;
+  // 内容
   content?: string;
+  // 关闭事件
   onClose: () => void;
+  // 确认事件，点击确认按钮时触发
   onConfirm: () => void;
+  // 取消事件，点击取消按钮时触发
   onCancel: () => void;
+  // 点击遮罩层时触发
   onMaskPress?: () => void;
   // 操作栏方向，默认为水平方向
   actionDirection?: 'horizontal' | 'vertical';
@@ -44,7 +50,7 @@ const Dialog = (props: DialogProps) => {
       {...modalProps}
     >
       <View style={styles.dialogMask}>
-        {props.visible && <Mask onPress={onMaskPress}></Mask>}
+        <Mask onPress={onMaskPress}></Mask>
         <View style={styles.dialog}>
           <View style={styles.dialog__hd}>
             <Text style={styles.dialog__title}>{title}</Text>
@@ -66,13 +72,25 @@ const Dialog = (props: DialogProps) => {
             <Pressable
               onPress={onCancel}
               style={({ pressed }) => {
+                if (pressed) {
+                  return [
+                    styles.dialog__btn,
+                    styles.dialog__btnDefault,
+                    styles.dialog__btn_active,
+                  ];
+                }
                 return [styles.dialog__btn, styles.dialog__btnDefault];
               }}
             >
               <Text style={styles.dialog__btnDefaultText}>辅助操作</Text>
             </Pressable>
             <Pressable
-              style={[styles.dialog__btn, styles.dialog__btnPrimary]}
+              style={({ pressed }) => {
+                if (pressed) {
+                  return [styles.dialog__btn, styles.dialog__btn_active];
+                }
+                return [styles.dialog__btn];
+              }}
               onPress={onConfirm}
             >
               <Text style={styles.dialog__btnPrimaryText}>主操作</Text>
@@ -83,6 +101,8 @@ const Dialog = (props: DialogProps) => {
     </Modal>
   );
 };
+
+Dialog.confirm = () => {};
 
 const useStyles = () => {
   const themeStyle = useTheme();
@@ -97,7 +117,6 @@ const useStyles = () => {
     dialog: {
       width: 320,
       marginHorizontal: 'auto',
-      // backgroundColor: '#fff',
       zIndex: 5000,
       backgroundColor: '#fff',
       borderRadius: 12,
@@ -145,10 +164,12 @@ const useStyles = () => {
       overflow: 'hidden',
     },
 
-    dialog__btnPrimary: {},
+    dialog__btn_active: {
+      backgroundColor: themeStyle['BG-COLOR-ACTIVE'],
+    },
 
     dialog__btnPrimaryText: {
-      fontWeight: 'bold',
+      fontWeight: '500',
       fontSize: 17,
       textAlign: 'center',
       color: themeStyle['LINK'],
@@ -160,7 +181,7 @@ const useStyles = () => {
     },
 
     dialog__btnDefaultText: {
-      fontWeight: 'bold',
+      fontWeight: '500',
       fontSize: 17,
       color: themeStyle['FG-HALF'],
       textAlign: 'center',

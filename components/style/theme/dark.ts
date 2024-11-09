@@ -158,6 +158,9 @@ const dark: Record<ThemeKey, string> = {
   'BTN-HEIGHT': '48',
   'BTN-HEIGHT-MEDIUM': '40',
   'BTN-HEIGHT-SMALL': '32',
+
+  //
+  'BG-COLOR-ACTIVE': '#ececec',
 };
 
 export default dark;

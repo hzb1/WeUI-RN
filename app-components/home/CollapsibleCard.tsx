@@ -32,16 +32,12 @@ const CollapsibleCard = ({
   onOpenChange,
   onPress,
 }: CollapsibleCardProps) => {
-  // const bodyHeight = items.length * 56;
-  // const height = isOpen ? 'auto' : 0;
-  // }, [bodyHeight, heightAnim, isOpen, items.length]);
-
   const onClickHeader = () => {
-    // LayoutAnimation.configureNext({
-    //   ...LayoutAnimation.Presets.easeInEaseOut,
-    //   duration: 300,
-    // });
-    LayoutAnimation.easeInEaseOut();
+    LayoutAnimation.configureNext({
+      ...LayoutAnimation.Presets.easeInEaseOut,
+      duration: 300,
+    });
+    // LayoutAnimation.easeInEaseOut();
     onOpenChange && onOpenChange(!isOpen);
   };
 
