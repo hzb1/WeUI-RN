@@ -15,6 +15,7 @@ const config: Config = {
     'components/**/*.{ts,tsx,js,jsx}',
     '!components/**/node_modules/**',
     '!components/style/**',
+    '!components/**/index.{ts,tsx,js,jsx}',
   ],
   // testEnvironment: 'jsdom',
 };

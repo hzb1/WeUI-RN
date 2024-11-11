@@ -9,6 +9,8 @@ import {
   Platform,
   LayoutAnimation,
 } from 'react-native';
+
+import useTheme from '@/components/style/theme/useTheme';
 export type CollapsibleCardProps = {
   isOpen: boolean;
   title: string;
@@ -40,6 +42,8 @@ const CollapsibleCard = ({
     // LayoutAnimation.easeInEaseOut();
     onOpenChange && onOpenChange(!isOpen);
   };
+
+  const styles = useStyles();
 
   return (
     <>
@@ -84,50 +88,55 @@ const CollapsibleCard = ({
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff',
-    borderRadius: 2,
-    overflow: 'hidden',
-  },
-  header: {
-    padding: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  title: {
-    flex: 1,
-  },
-  icon: {
-    width: 30,
-    height: 30,
-  },
-  body: {
-    display: 'flex',
-    overflow: 'hidden',
-  },
-  cell: {
-    width: '100%',
-    paddingHorizontal: 20,
-  },
-  cellContent: {
-    width: '100%',
-    // backgroundColor: '#333',
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    borderBottomWidth: 0.5,
-    borderBottomColor: 'rgba(0, 0, 0, 0.1)',
-    height: 56,
-    flexShrink: 0,
-    paddingVertical: 16,
-  },
-  name: {
-    fontSize: 17,
-    // lineHeight: 22,
-    // color: '#333',
-  },
-});
+const useStyles = () => {
+  const theme = useTheme();
+  return StyleSheet.create({
+    container: {
+      backgroundColor: theme['BG-2'],
+      borderRadius: 2,
+      overflow: 'hidden',
+    },
+    header: {
+      padding: 20,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    title: {
+      flex: 1,
+      color: theme['FG-0'],
+    },
+    icon: {
+      width: 30,
+      height: 30,
+    },
+    body: {
+      display: 'flex',
+      overflow: 'hidden',
+    },
+    cell: {
+      width: '100%',
+      paddingHorizontal: 20,
+    },
+    cellContent: {
+      width: '100%',
+      // backgroundColor: '#333',
+      alignItems: 'center',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      borderBottomWidth: 0.5,
+      borderBottomColor: 'rgba(0, 0, 0, 0.1)',
+      height: 56,
+      flexShrink: 0,
+      paddingVertical: 16,
+    },
+    name: {
+      fontSize: 17,
+      color: theme['FG-0'],
+      // lineHeight: 22,
+      // color: '#333',
+    },
+  });
+};
 
 export default CollapsibleCard;

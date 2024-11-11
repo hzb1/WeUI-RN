@@ -1,5 +1,5 @@
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Text, View, StyleSheet, Image, Dimensions } from 'react-native';
 import {
   SafeAreaProvider,
@@ -9,6 +9,9 @@ import {
 
 import CollapsibleCard from '@/app-components/home/CollapsibleCard';
 import ParallaxScrollView from '@/app-components/home/ParallaxScrollView';
+import ThemeSwitch from '@/app-components/home/ThemeSwitch';
+import { ThemeContext } from '@/components/Contexts';
+import useTheme from '@/components/style/theme/useTheme';
 
 type Item = {
   title: string;
@@ -18,6 +21,8 @@ type Item = {
 
 const Index = () => {
   const router = useRouter();
+  const styles = useStyles();
+  const theme = useTheme();
 
   // 获取屏幕的高度和宽度
   const { height: screenHeight } = Dimensions.get('window');
@@ -30,6 +35,8 @@ const Index = () => {
 
   // 当前打开的卡片
   const [openTitle, setOpenTitle] = useState<string | null>(null);
+
+  // const { theme } = useContext(ThemeContext);
 
   const data: Item[] = [
     {
@@ -236,51 +243,65 @@ const Index = () => {
             </View>
           </View>
         </ParallaxScrollView>
+
+        <ThemeSwitch style={styles.themeSwitch} color={theme['FG-0']} />
       </SafeAreaView>
     </SafeAreaProvider>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    // flex: 1,
-    height: '100%',
-    backgroundColor: '#ededed',
-    fontSize: 16,
-    position: 'relative',
-  },
-  head: {
-    padding: 40,
-  },
-  title: {
-    width: 62,
-    height: 21,
-    marginBottom: 15,
-  },
-  desc: {
-    color: 'rgba(0, 0, 0, 0.55)',
-    fontSize: 14,
-    marginTop: 4,
-    lineHeight: 22.4,
-  },
-  body: {
-    width: '100%',
-    paddingHorizontal: 16,
-    backgroundColor: '#ededed',
-  },
-  lists: {
-    marginBottom: 20,
-    gap: 8,
-  },
-  footer: {
-    paddingTop: 40,
-    paddingBottom: 32,
-    alignItems: 'center',
-    // position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-  },
-});
+const useStyles = () => {
+  const theme = useTheme();
+  return StyleSheet.create({
+    container: {
+      // flex: 1,
+      height: '100%',
+      // backgroundColor: '#ededed',
+      backgroundColor: theme['BG-0'],
+      fontSize: 16,
+      position: 'relative',
+    },
+    head: {
+      padding: 40,
+    },
+    title: {
+      width: 62,
+      height: 21,
+      marginBottom: 15,
+      color: theme['FG-0'],
+    },
+    desc: {
+      // color: 'rgba(0, 0, 0, 0.55)',
+      fontSize: 14,
+      marginTop: 4,
+      lineHeight: 22.4,
+      color: theme['FG-1'],
+    },
+    body: {
+      width: '100%',
+      paddingHorizontal: 16,
+      // backgroundColor: '#ededed',
+    },
+    lists: {
+      marginBottom: 20,
+      gap: 8,
+    },
+    footer: {
+      paddingTop: 40,
+      paddingBottom: 32,
+      alignItems: 'center',
+      // position: 'absolute',
+      bottom: 0,
+      left: 0,
+      right: 0,
+    },
+    themeSwitch: {
+      position: 'absolute',
+      right: 16,
+      bottom: 16,
+      backgroundColor: theme['BG-0'],
+    },
+  });
+};
 
 export default Index;

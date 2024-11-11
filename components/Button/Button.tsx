@@ -25,7 +25,7 @@ const Button = ({
       disabled={disabled}
       style={({ pressed }) =>
         getButtonStyle({
-          pressed: pressed && !loading,
+          pressed: loading ? false : pressed,
           type,
           disabled,
           size,
@@ -37,7 +37,7 @@ const Button = ({
     >
       {({ pressed }) => {
         const textStyle = getTextStyle({
-          pressed: pressed && !loading,
+          pressed: loading ? false : pressed,
           type,
           disabled,
           size,

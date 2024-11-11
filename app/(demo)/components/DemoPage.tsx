@@ -5,7 +5,10 @@ import {
   SafeAreaView,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+
 import ScrollView = Animated.ScrollView;
+
+import useTheme from '@/components/style/theme/useTheme';
 
 const DemoPage = ({
   children,
@@ -18,6 +21,7 @@ const DemoPage = ({
   desc: string;
   style?: ViewStyle;
 }) => {
+  const styles = useStyles();
   return (
     <SafeAreaView style={[styles.container, style]}>
       <ScrollView>
@@ -32,25 +36,31 @@ const DemoPage = ({
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  header: {
-    padding: 40,
-    paddingTop: 20,
-  },
-  title: {
-    textAlign: 'left',
-    fontSize: 20,
-    fontWeight: '400',
-  },
-  desc: {
-    marginTop: 4,
-    textAlign: 'left',
-    fontSize: 14,
-  },
-  body: {},
-});
+const useStyles = () => {
+  const theme = useTheme();
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: theme['BG-0'],
+    },
+    header: {
+      padding: 40,
+      paddingTop: 20,
+    },
+    title: {
+      textAlign: 'left',
+      fontSize: 20,
+      fontWeight: '400',
+      color: theme['FG-0'],
+    },
+    desc: {
+      marginTop: 4,
+      textAlign: 'left',
+      fontSize: 14,
+      color: theme['FG-1'],
+    },
+    body: {},
+  });
+};
 
 export default DemoPage;

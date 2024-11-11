@@ -13,6 +13,7 @@ exports[`Button Button 演示测试 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ededed",
         "flex": 1,
       },
       undefined,
@@ -36,6 +37,7 @@ exports[`Button Button 演示测试 1`] = `
         <Text
           style={
             {
+              "color": "rgba(0, 0, 0, 0.9)",
               "fontSize": 20,
               "fontWeight": "400",
               "textAlign": "left",
@@ -47,6 +49,7 @@ exports[`Button Button 演示测试 1`] = `
         <Text
           style={
             {
+              "color": "rgba(0, 0, 0, 0.55)",
               "fontSize": 14,
               "marginTop": 4,
               "textAlign": "left",
