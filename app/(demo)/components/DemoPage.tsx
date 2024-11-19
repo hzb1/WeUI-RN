@@ -1,14 +1,10 @@
 import { ReactNode } from 'react';
 import { View, Text, ViewStyle, StyleSheet, Animated } from 'react-native';
-import {
-  SafeAreaProvider,
-  SafeAreaView,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
-
-import ScrollView = Animated.ScrollView;
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import useTheme from '@/components/style/theme/useTheme';
+
+const ScrollView = Animated.ScrollView;
 
 const DemoPage = ({
   children,

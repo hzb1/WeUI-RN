@@ -7,6 +7,7 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
+import FilteredImage from '@/app/components/FilteredImage';
 import CollapsibleCard from '@/app-components/home/CollapsibleCard';
 import ParallaxScrollView from '@/app-components/home/ParallaxScrollView';
 import ThemeSwitch from '@/app-components/home/ThemeSwitch';
@@ -203,7 +204,7 @@ const Index = () => {
         <ParallaxScrollView
           headerImage={
             <View style={styles.head}>
-              <Image
+              <FilteredImage
                 style={styles.title}
                 source={{
                   uri: 'https://weui.io/images/logo.png',

@@ -160,7 +160,8 @@ const dark: Record<ThemeKey, string> = {
   'BTN-HEIGHT-SMALL': '32',
 
   //
-  'BG-COLOR-ACTIVE': '#ececec',
+  'BG-COLOR-ACTIVE': '#373737',
+  'DIALOG-LINE-COLOR': 'rgba(255, 255, 255, 0.1)',
 };
 
 export default dark;

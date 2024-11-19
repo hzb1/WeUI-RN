@@ -167,6 +167,7 @@ const light = {
 
   //
   'BG-COLOR-ACTIVE': '#ececec',
+  'DIALOG-LINE-COLOR': 'rgba(0,0,0,.1)',
 };
 
 export default light;

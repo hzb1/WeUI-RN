@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import Mask from '@/components/Mask';
+import { Portal } from '@/components/Portal/PortalProvider';
 import useTheme from '@/components/style/theme/useTheme';
 
 interface DialogProps extends ModalProps {
@@ -102,7 +103,30 @@ const Dialog = (props: DialogProps) => {
   );
 };
 
-Dialog.confirm = () => {};
+interface DialogConfirmProps extends DialogProps {
+  // 确认事件，点击确认按钮时触发
+  // onConfirm: () => void;
+}
+
+Dialog.confirm = ({ ...dialogProps }: DialogConfirmProps) => {
+  return Portal.show({
+    content: (
+      <Dialog
+        {...dialogProps}
+        onConfirm={() => {
+          dialogProps.onConfirm();
+        }}
+      />
+    ),
+    // onHide: () => {
+    //   return new Promise((resolve) => {
+    //     setTimeout(() => {
+    //       resolve();
+    //     }, 300);
+    //   });
+    // },
+  });
+};
 
 const useStyles = () => {
   const themeStyle = useTheme();
@@ -118,7 +142,7 @@ const useStyles = () => {
       width: 320,
       marginHorizontal: 'auto',
       zIndex: 5000,
-      backgroundColor: '#fff',
+      backgroundColor: themeStyle['BG-2'],
       borderRadius: 12,
       overflow: 'scroll',
     },
@@ -146,8 +170,8 @@ const useStyles = () => {
     },
     dialog__ft: {
       borderTopWidth: StyleSheet.hairlineWidth,
-      // borderTopColor: themeStyle['DIALOG-LINE-COLOR'],
-      borderTopColor: 'rgba(0, 0, 0, 0.1)',
+      borderTopColor: themeStyle['DIALOG-LINE-COLOR'],
+      // borderTopColor: 'rgba(0, 0, 0, 0.1)',
       display: 'flex',
       flexDirection: 'row',
     },
@@ -160,7 +184,7 @@ const useStyles = () => {
       paddingHorizontal: 8,
       textAlign: 'center',
       borderWidth: 0,
-      backgroundColor: '#fff',
+      // backgroundColor: '#fff',
       overflow: 'hidden',
     },
 
@@ -173,11 +197,12 @@ const useStyles = () => {
       fontSize: 17,
       textAlign: 'center',
       color: themeStyle['LINK'],
+      userSelect: 'none',
     },
 
     dialog__btnDefault: {
       borderRightWidth: StyleSheet.hairlineWidth,
-      borderRightColor: 'rgba(0, 0, 0, 0.1)',
+      borderRightColor: themeStyle['DIALOG-LINE-COLOR'],
     },
 
     dialog__btnDefaultText: {
@@ -185,6 +210,7 @@ const useStyles = () => {
       fontSize: 17,
       color: themeStyle['FG-HALF'],
       textAlign: 'center',
+      userSelect: 'none',
     },
   });
 };

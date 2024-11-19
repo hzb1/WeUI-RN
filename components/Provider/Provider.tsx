@@ -2,6 +2,7 @@ import { ReactNode, useState } from 'react';
 import { useColorScheme } from 'react-native';
 
 import { ThemeContext, ThemeContextType } from '@/components/Contexts';
+import { PortalProvider } from '@/components/Portal/PortalProvider';
 
 const Provider = ({ children }: { children: ReactNode }) => {
   const colorScheme = useColorScheme();
@@ -16,7 +17,7 @@ const Provider = ({ children }: { children: ReactNode }) => {
           onChangeTheme: setTheme,
         }}
       >
-        {children}
+        <PortalProvider>{children}</PortalProvider>
       </ThemeContext.Provider>
     </>
   );
