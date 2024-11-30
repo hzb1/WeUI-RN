@@ -9,8 +9,12 @@ const DialogDemo = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalVisible2, setModalVisible2] = useState(false);
 
-  const showDialog = () => {
+  const showDialogStyle1 = () => {
     setModalVisible(true);
+  };
+
+  const showDialogStyle2 = () => {
+    setModalVisible2(true);
   };
 
   // 命令式
@@ -42,8 +46,8 @@ const DialogDemo = () => {
     <DemoPage title={'Dialog'} desc={'对话框'}>
       <View>
         <View style={{ gap: 16 }}>
-          <Button onPress={showDialog}>样式一</Button>
-          <Button onPress={showConfirm}>样式二</Button>
+          <Button onPress={showDialogStyle1}>样式一</Button>
+          <Button onPress={showDialogStyle2}>样式二</Button>
           <Button>样式三</Button>
         </View>
       </View>
@@ -64,14 +68,14 @@ const DialogDemo = () => {
       {/*样式二*/}
       <Dialog
         visible={modalVisible2}
-        title={'弹窗标题'}
         content={
           '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内'
         }
-        onClose={() => setModalVisible(false)}
-        onMaskPress={() => setModalVisible(false)}
-        onConfirm={() => setModalVisible(false)}
-        onCancel={() => setModalVisible(false)}
+        confirmType={'warn'}
+        onClose={() => setModalVisible2(false)}
+        onMaskPress={() => setModalVisible2(false)}
+        onConfirm={() => setModalVisible2(false)}
+        onCancel={() => setModalVisible2(false)}
       />
     </DemoPage>
   );

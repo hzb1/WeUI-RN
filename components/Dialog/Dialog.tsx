@@ -28,6 +28,8 @@ interface DialogProps extends ModalProps {
   onMaskPress?: () => void;
   // 操作栏方向，默认为水平方向
   actionDirection?: 'horizontal' | 'vertical';
+  // 确认按钮类型 primary | warn
+  confirmType?: 'primary' | 'warn';
 }
 
 const Dialog = (props: DialogProps) => {
@@ -35,6 +37,7 @@ const Dialog = (props: DialogProps) => {
     title,
     content,
     actionDirection,
+    confirmType,
     onClose,
     onMaskPress,
     onCancel,
@@ -53,13 +56,26 @@ const Dialog = (props: DialogProps) => {
       <View style={styles.dialogMask}>
         <Mask onPress={onMaskPress}></Mask>
         <View style={styles.dialog}>
-          <View style={styles.dialog__hd}>
-            <Text style={styles.dialog__title}>{title}</Text>
-          </View>
+          {title && content ? (
+            <>
+              <View style={styles.dialog__hd}>
+                <Text style={styles.dialog__title}>{title}</Text>
+              </View>
 
-          <View style={styles.dialog__bd}>
-            <Text style={styles.dialog__content}>{content}</Text>
-          </View>
+              <View style={styles.dialog__bd}>
+                <Text style={styles.dialog__content}>{content}</Text>
+              </View>
+            </>
+          ) : (
+            <View
+              style={[
+                styles.dialog__hd,
+                { paddingBottom: 0, marginBottom: 32 },
+              ]}
+            >
+              <Text style={styles.dialog__title}>{content}</Text>
+            </View>
+          )}
 
           <View
             style={[
@@ -94,7 +110,14 @@ const Dialog = (props: DialogProps) => {
               }}
               onPress={onConfirm}
             >
-              <Text style={styles.dialog__btnPrimaryText}>主操作</Text>
+              <Text
+                style={[
+                  styles.dialog__btnPrimaryText,
+                  confirmType === 'warn' && styles.dialog__btnWarnText,
+                ]}
+              >
+                主操作
+              </Text>
             </Pressable>
           </View>
         </View>
@@ -198,6 +221,10 @@ const useStyles = () => {
       textAlign: 'center',
       color: themeStyle['LINK'],
       userSelect: 'none',
+    },
+
+    dialog__btnWarnText: {
+      color: themeStyle['RED'],
     },
 
     dialog__btnDefault: {
