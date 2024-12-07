@@ -1,5 +1,14 @@
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { useRouter } from 'expo-router';
 import { ReactNode } from 'react';
-import { View, Text, ViewStyle, StyleSheet, Animated } from 'react-native';
+import {
+  View,
+  Text,
+  ViewStyle,
+  StyleSheet,
+  Animated,
+  Pressable,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import useTheme from '@/components/style/theme/useTheme';
@@ -18,12 +27,23 @@ const DemoPage = ({
   style?: ViewStyle;
 }) => {
   const styles = useStyles();
+  const router = useRouter();
+
+  const onCodePress = () => {
+    // @ts-ignore
+    router.push('/sourceCode');
+  };
+
   return (
     <SafeAreaView style={[styles.container, style]}>
       <ScrollView>
         <View style={styles.header}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.desc}>{desc}</Text>
+
+          <Pressable style={styles.code} onPress={onCodePress}>
+            <MaterialIcons name={'code'} size={30} color={styles.code.color} />
+          </Pressable>
         </View>
 
         <View style={styles.body}>{children}</View>
@@ -56,6 +76,13 @@ const useStyles = () => {
       color: theme['FG-1'],
     },
     body: {},
+    code: {
+      position: 'absolute',
+      right: 40,
+      top: 20,
+      // color: 'red',
+      color: theme['FG-1'],
+    },
   });
 };
 
