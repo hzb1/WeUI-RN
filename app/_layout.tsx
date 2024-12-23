@@ -15,7 +15,6 @@ export default function RootLayout() {
             headerShown: true,
             headerBackTitle: '返回',
             title: '代码演示',
-            animation: 'slide_from_bottom',
           }}
         />
       </Stack>

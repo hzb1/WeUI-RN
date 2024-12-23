@@ -1,12 +1,12 @@
-// import { createPortal } from 'react-dom';
-
 import {
   Modal,
   ModalProps,
   Pressable,
+  StyleProp,
   StyleSheet,
   Text,
   View,
+  ViewStyle,
 } from 'react-native';
 
 import Mask from '@/components/Mask';
@@ -26,8 +26,8 @@ interface DialogProps extends ModalProps {
   onCancel: () => void;
   // 点击遮罩层时触发
   onMaskPress?: () => void;
-  // 操作栏方向，默认为水平方向
-  actionDirection?: 'horizontal' | 'vertical';
+  // 垂直操作栏
+  verticalAction?: boolean;
   // 确认按钮类型 primary | warn
   confirmType?: 'primary' | 'warn';
 }
@@ -36,12 +36,12 @@ const Dialog = (props: DialogProps) => {
   const {
     title,
     content,
-    actionDirection,
     confirmType,
     onClose,
     onMaskPress,
     onCancel,
     onConfirm,
+    verticalAction = false,
     ...modalProps
   } = props;
   const styles = useStyles();
@@ -81,22 +81,30 @@ const Dialog = (props: DialogProps) => {
             style={[
               styles.dialog__ft,
               {
-                flexDirection:
-                  actionDirection === 'vertical' ? 'column' : 'row',
+                flexDirection: verticalAction ? 'column-reverse' : 'row',
               },
             ]}
           >
             <Pressable
               onPress={onCancel}
               style={({ pressed }) => {
+                const s: StyleProp<ViewStyle> = {
+                  borderTopWidth: styles.dialog__ft.borderTopWidth,
+                  borderTopColor: styles.dialog__ft.borderTopColor,
+                };
                 if (pressed) {
                   return [
                     styles.dialog__btn,
                     styles.dialog__btnDefault,
                     styles.dialog__btn_active,
+                    verticalAction && s,
                   ];
                 }
-                return [styles.dialog__btn, styles.dialog__btnDefault];
+                return [
+                  styles.dialog__btn,
+                  styles.dialog__btnDefault,
+                  verticalAction && s,
+                ];
               }}
             >
               <Text style={styles.dialog__btnDefaultText}>辅助操作</Text>

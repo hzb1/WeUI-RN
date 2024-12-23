@@ -2,7 +2,7 @@ import { View } from 'react-native'; // 7.0.1
 // @ts-ignore
 import SyntaxHighlighter from 'react-native-syntax-highlighter'; // 2.0.0
 // @ts-ignore
-import { vs2015, darcula } from 'react-syntax-highlighter/styles/prism';
+import { darcula } from 'react-syntax-highlighter/styles/prism';
 const CodeSyntaxHighlighter = ({ code }: { code: string }) => {
   return (
     <View
