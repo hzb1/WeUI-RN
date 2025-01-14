@@ -1,5 +1,7 @@
+import { useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
+import DialogDemo from '@/app/(demo)/dialog/DialogDemo';
 import CodeSyntaxHighlighter from '@/app/components/CodeSyntaxHighlighter';
 
 const codeDefault = `
@@ -173,10 +175,26 @@ const styles = StyleSheet.create({
 export default ButtonDemo;
 `;
 
+const o: { [key: string]: string } = {
+  button: codeDefault,
+  dialog: DialogDemo.toString(),
+};
+
+const getDefaultCode = (name: string): string => {
+  return o[name] || '';
+};
+
 const SourceCode = () => {
+  const localSearchParams = useLocalSearchParams();
+  console.log('localSearchParams', localSearchParams.title);
+  const code =
+    typeof localSearchParams.title === 'string'
+      ? getDefaultCode(localSearchParams.title)
+      : codeDefault;
+
   return (
     <View>
-      <CodeSyntaxHighlighter code={codeDefault} />
+      <CodeSyntaxHighlighter code={code} />
     </View>
   );
 };

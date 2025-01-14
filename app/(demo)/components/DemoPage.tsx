@@ -30,8 +30,7 @@ const DemoPage = ({
   const router = useRouter();
 
   const onCodePress = () => {
-    // @ts-ignore
-    router.push('/sourceCode');
+    router.push(`/sourceCode?title=${String(title).trim().toLowerCase()}`);
   };
 
   return (

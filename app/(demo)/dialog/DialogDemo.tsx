@@ -17,31 +17,7 @@ const DialogDemo = () => {
     setModalVisible2(true);
   };
 
-  // 命令式
-  const showConfirm = () => {
-    const close = Dialog.confirm({
-      title: '弹窗标题',
-      content:
-        '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
-      onConfirm: () => {
-        console.log('confirm');
-        close();
-      },
-      onCancel: () => {
-        console.log('cancel');
-        close();
-      },
-      onClose: () => {
-        console.log('close');
-        close();
-      },
-      onMaskPress: () => {
-        console.log('mask press');
-        close();
-      },
-    });
-  };
-
+  // 命令式演示
   const showDialogStyle3 = () => {
     const close = Dialog.confirm({
       title: '弹窗标题',
