@@ -5,7 +5,7 @@ import Provider from '@/components/Provider/Provider';
 export default function RootLayout() {
   return (
     <Provider>
-      <Stack screenOptions={{ headerShown: false, animation: 'ios' }}>
+      <Stack screenOptions={{ headerShown: false, animation: 'fade' }}>
         <Stack.Screen name="(home)/index" />
         <Stack.Screen name="(demo)/button/index" />
         <Stack.Screen name="(demo)/dialog/index" />

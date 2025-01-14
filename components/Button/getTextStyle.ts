@@ -1,5 +1,5 @@
 // @ts-ignore
-import Color from 'color';
+// import Color from 'color';
 import { StyleProp, StyleSheet, TextStyle } from 'react-native';
 
 import { ButtonProps } from '@/components/Button/ButtonType';
@@ -94,8 +94,8 @@ const getStyles = (pressed: boolean, themeStyle: Record<ThemeKey, string>) =>
     },
   });
 
-const darken = (color: string) => {
-  return Color(color).darken(0.12).toString();
-};
+// const darken = (color: string) => {
+//   return Color(color).darken(0.12).toString();
+// };
 
 export default getTextStyle;

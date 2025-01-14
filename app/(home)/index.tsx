@@ -11,7 +11,6 @@ import FilteredImage from '@/app/components/FilteredImage';
 import CollapsibleCard from '@/app-components/home/CollapsibleCard';
 import ParallaxScrollView from '@/app-components/home/ParallaxScrollView';
 import ThemeSwitch from '@/app-components/home/ThemeSwitch';
-import { ThemeContext } from '@/components/Contexts';
 import useTheme from '@/components/style/theme/useTheme';
 
 type Item = {
