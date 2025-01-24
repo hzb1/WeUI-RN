@@ -8,6 +8,7 @@ import {
   StyleSheet,
   Animated,
   Pressable,
+  TouchableOpacity,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -40,9 +41,9 @@ const DemoPage = ({
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.desc}>{desc}</Text>
 
-          <Pressable style={styles.code} onPress={onCodePress}>
+          <TouchableOpacity style={styles.code} onPress={onCodePress}>
             <MaterialIcons name={'code'} size={30} color={styles.code.color} />
-          </Pressable>
+          </TouchableOpacity>
         </View>
 
         <View style={styles.body}>{children}</View>

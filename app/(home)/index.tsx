@@ -53,7 +53,7 @@ const Index = () => {
         },
         {
           name: 'Input',
-          url: 'https://weui.io/#input',
+          url: '/input',
         },
         {
           name: 'List',

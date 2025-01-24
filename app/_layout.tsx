@@ -1,14 +1,38 @@
+import { NativeStackNavigationOptions } from '@react-navigation/native-stack/src/types';
 import { Stack } from 'expo-router';
+import { useContext, useMemo } from 'react';
 
+import { ThemeContext } from '@/components/Contexts';
 import Provider from '@/components/Provider/Provider';
+import useTheme from '@/components/style/theme/useTheme';
 
 export default function RootLayout() {
   return (
     <Provider>
-      <Stack screenOptions={{ headerShown: false, animation: 'fade' }}>
+      <StackComponent />
+    </Provider>
+  );
+}
+
+const StackComponent = () => {
+  const { theme } = useContext(ThemeContext);
+  const themeStyles = useTheme();
+
+  const screenOptions: NativeStackNavigationOptions = useMemo(() => {
+    return {
+      headerShown: false,
+      statusBarBackgroundColor: themeStyles['BG-0'],
+      statusBarStyle: theme === 'dark' ? 'light' : 'dark',
+    };
+  }, [theme, themeStyles]);
+
+  return (
+    <>
+      <Stack screenOptions={screenOptions}>
         <Stack.Screen name="(home)/index" />
         <Stack.Screen name="(demo)/button/index" />
         <Stack.Screen name="(demo)/dialog/index" />
+        <Stack.Screen name="(demo)/input/index" />
         <Stack.Screen
           name="sourceCode/index"
           options={{
@@ -18,6 +42,6 @@ export default function RootLayout() {
           }}
         />
       </Stack>
-    </Provider>
+    </>
   );
-}
+};
