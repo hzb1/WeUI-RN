@@ -1,8 +1,7 @@
 import { NativeStackNavigationOptions } from '@react-navigation/native-stack/src/types';
 import { Stack } from 'expo-router';
-import { useContext, useMemo } from 'react';
+import { useMemo } from 'react';
 
-import { ThemeContext } from '@/components/Contexts';
 import Provider from '@/components/Provider/Provider';
 import useTheme from '@/components/style/theme/useTheme';
 
@@ -15,16 +14,15 @@ export default function RootLayout() {
 }
 
 const StackComponent = () => {
-  const { theme } = useContext(ThemeContext);
   const themeStyles = useTheme();
 
   const screenOptions: NativeStackNavigationOptions = useMemo(() => {
     return {
       headerShown: false,
       statusBarBackgroundColor: themeStyles['BG-0'],
-      statusBarStyle: theme === 'dark' ? 'light' : 'dark',
+      // statusBarStyle: theme === 'dark' ? 'light' : 'dark',
     };
-  }, [theme, themeStyles]);
+  }, [themeStyles]);
 
   return (
     <>
