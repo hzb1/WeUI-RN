@@ -31,6 +31,7 @@ const StackComponent = () => {
         <Stack.Screen name="(demo)/button/index" />
         <Stack.Screen name="(demo)/dialog/index" />
         <Stack.Screen name="(demo)/input/index" />
+        <Stack.Screen name="(demo)/list/index" />
         <Stack.Screen
           name="sourceCode/index"
           options={{

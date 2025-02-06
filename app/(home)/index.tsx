@@ -57,7 +57,7 @@ const Index = () => {
         },
         {
           name: 'List',
-          url: 'https://weui.io/#list',
+          url: '/list',
         },
         {
           name: 'Slider',
