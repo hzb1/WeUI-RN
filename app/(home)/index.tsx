@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
+import CollapsibleCard from '@/app/components/CollapsibleCard';
 import FilteredImage from '@/app/components/FilteredImage';
-import CollapsibleCard from '@/app-components/home/CollapsibleCard';
-import ParallaxScrollView from '@/app-components/home/ParallaxScrollView';
-import ThemeSwitch from '@/app-components/home/ThemeSwitch';
+import ParallaxScrollView from '@/app/components/ParallaxScrollView';
+import ThemeSwitch from '@/app/components/ThemeSwitch';
 import useTheme from '@/components/style/theme/useTheme';
 
 type Item = {
