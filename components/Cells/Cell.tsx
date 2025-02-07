@@ -1,17 +1,19 @@
+import Entypo from '@expo/vector-icons/Entypo';
 import { ReactNode } from 'react';
 import {
-  Image,
   StyleSheet,
   View,
-  ViewProps,
   Pressable,
   PressableProps,
+  TextProps,
 } from 'react-native';
 
 import useTheme from '@/components/style/theme/useTheme';
 import MaybeText from '@/components/utils/MaybeText';
 
-const arrowIcon = `data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E`;
+const ArrowIcon = (props: TextProps) => (
+  <Entypo name="chevron-thin-right" size={14} {...props} />
+);
 
 export interface CellProps extends PressableProps {
   // 标题
@@ -46,7 +48,7 @@ const Cell = ({
       {...viewProps}
       style={(state) => {
         if (showArrow && state.pressed) {
-          return [styles.cell, { backgroundColor: '#f5f5f5' }];
+          return [styles.cell, styles.cell__active];
         }
         return [styles.cell];
       }}
@@ -60,7 +62,12 @@ const Cell = ({
         <View style={styles.cell__ft}>
           <MaybeText style={styles.desc} children={desc} />
           {showArrow && (
-            <Image source={{ width: 12, height: 24, uri: arrowIcon }} />
+            <ArrowIcon
+              style={{
+                marginLeft: 12,
+                color: styles.desc.color,
+              }}
+            />
           )}
         </View>
         {border && <View style={[styles.beforeElement, { left: 0 }]}></View>}
@@ -79,6 +86,10 @@ const useStyles = () => {
       alignItems: 'center',
       justifyContent: 'space-between',
       flexDirection: 'row',
+    },
+    cell__active: {
+      // backgroundColor: '#E5E5E5',
+      backgroundColor: themeStyle['BG-COLOR-ACTIVE'],
     },
     container: {
       flex: 1,
