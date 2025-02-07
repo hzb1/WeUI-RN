@@ -1,11 +1,7 @@
 import { useRouter } from 'expo-router';
-import { useContext, useState } from 'react';
-import { Text, View, StyleSheet, Image, Dimensions } from 'react-native';
-import {
-  SafeAreaProvider,
-  SafeAreaView,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import { useState } from 'react';
+import { Text, View, StyleSheet, Image } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import FilteredImage from '@/app/components/FilteredImage';
 import CollapsibleCard from '@/app-components/home/CollapsibleCard';
@@ -24,19 +20,8 @@ const Index = () => {
   const styles = useStyles();
   const theme = useTheme();
 
-  // 获取屏幕的高度和宽度
-  const { height: screenHeight } = Dimensions.get('window');
-
-  // 使用 useSafeAreaInsets 钩子获取安全区域插图
-  const insets = useSafeAreaInsets();
-
-  // 计算不包含安全区域的高度
-  const contentHeight = screenHeight - insets.top - insets.bottom;
-
   // 当前打开的卡片
   const [openTitle, setOpenTitle] = useState<string | null>(null);
-
-  // const { theme } = useContext(ThemeContext);
 
   const data: Item[] = [
     {
@@ -199,7 +184,7 @@ const Index = () => {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={[styles.container, { minHeight: contentHeight }]}>
+      <SafeAreaView style={[styles.container]}>
         <ParallaxScrollView
           headerImage={
             <View style={styles.head}>

@@ -20,6 +20,7 @@ const StackComponent = () => {
     return {
       headerShown: false,
       statusBarBackgroundColor: themeStyles['BG-0'],
+      animation: 'ios_from_right',
       // statusBarStyle: theme === 'dark' ? 'light' : 'dark',
     };
   }, [themeStyles]);
@@ -35,9 +36,10 @@ const StackComponent = () => {
         <Stack.Screen
           name="sourceCode/index"
           options={{
-            headerShown: true,
+            headerShown: false,
             headerBackTitle: '返回',
             title: '代码演示',
+            presentation: 'modal',
           }}
         />
       </Stack>
