@@ -9,7 +9,6 @@ import {
   ViewStyle,
 } from 'react-native';
 
-import Mask from '@/components/Mask';
 import { Portal } from '@/components/Portal/PortalProvider';
 import useTheme from '@/components/style/theme/useTheme';
 
@@ -53,8 +52,10 @@ const Dialog = (props: DialogProps) => {
       onRequestClose={onClose}
       {...modalProps}
     >
-      <View style={styles.dialogMask}>
-        <Mask onPress={onMaskPress}></Mask>
+      <View style={styles.container}>
+        <View style={styles.dialogMask}>
+          <Pressable onPress={onMaskPress} style={{ flex: 1 }}></Pressable>
+        </View>
         <View style={styles.dialog}>
           {title && content ? (
             <>
@@ -144,6 +145,7 @@ Dialog.confirm = ({ ...dialogProps }: DialogConfirmProps) => {
     content: (
       <Dialog
         {...dialogProps}
+        visible={true}
         onConfirm={() => {
           dialogProps.onConfirm();
         }}
@@ -163,10 +165,18 @@ const useStyles = () => {
   const themeStyle = useTheme();
 
   return StyleSheet.create({
-    dialogMask: {
+    container: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
+    },
+    dialogMask: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', // 透明的遮罩层
     },
 
     dialog: {
