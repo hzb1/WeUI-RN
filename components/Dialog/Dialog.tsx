@@ -141,24 +141,21 @@ interface DialogConfirmProps extends DialogProps {
 }
 
 Dialog.confirm = ({ ...dialogProps }: DialogConfirmProps) => {
-  return Portal.show({
-    content: (
+  const portalId = Portal.open({
+    content: ({ open }) => (
       <Dialog
         {...dialogProps}
-        visible={true}
+        visible={open}
         onConfirm={() => {
           dialogProps.onConfirm();
         }}
       />
     ),
-    // onHide: () => {
-    //   return new Promise((resolve) => {
-    //     setTimeout(() => {
-    //       resolve();
-    //     }, 300);
-    //   });
-    // },
   });
+
+  return () => {
+    Portal.closeAndUnload(portalId);
+  };
 };
 
 const useStyles = () => {

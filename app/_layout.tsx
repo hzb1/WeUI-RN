@@ -1,4 +1,4 @@
-import { NativeStackNavigationOptions } from '@react-navigation/native-stack/src/types';
+import { type NativeStackNavigationOptions } from '@react-navigation/native-stack/src/types';
 import { Stack } from 'expo-router';
 import { useMemo } from 'react';
 
@@ -33,6 +33,7 @@ const StackComponent = () => {
         <Stack.Screen name="(demo)/dialog/index" />
         <Stack.Screen name="(demo)/input/index" />
         <Stack.Screen name="(demo)/list/index" />
+        <Stack.Screen name="(demo)/actionSheet/index" />
         <Stack.Screen
           name="sourceCode/index"
           options={{

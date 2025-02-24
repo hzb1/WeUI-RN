@@ -1,6 +1,7 @@
 import {
   createContext,
   ReactNode,
+  useCallback,
   useContext,
   useEffect,
   useState,
@@ -8,60 +9,99 @@ import {
 import { View } from 'react-native';
 
 type PortalType = {
+  // 唯一标识
   id: string;
-  content: ReactNode;
-  onHide?: () => Promise<void>;
+  // 默认是否打开
+  defaultOpen?: boolean;
+  // render 函数
+  content:
+    | ReactNode
+    | ((props: {
+        open: boolean;
+        onOpenChange: (v: boolean) => void;
+      }) => ReactNode);
 };
 
 export type PortalContextType = {
-  showPortal?: (portal: PortalType) => void;
-  hidePortal?: (id: string) => void;
+  // 挂载
+  mountPortal: (portal: PortalType) => void;
+  // 卸载
+  unloadPortal: (id: string) => void;
+  showPortal: (id: string) => void;
+  hidePortal: (id: string) => void;
 };
 
 const PortalContext = createContext<PortalContextType>({
+  mountPortal: () => {},
+  unloadPortal: () => {},
   showPortal: () => {},
   hidePortal: () => {},
 });
 
-let portalInstance: {
-  showPortal: (portal: PortalType) => void;
-  hidePortal: (id: string) => void;
-} | null = null;
+let portalInstance: PortalContextType | null = null;
+
+// 延迟卸载的 timeoutId
+const delayUnloadMap: { [key: string]: NodeJS.Timeout } = {};
 
 // 定义全局 API
 export const Portal = {
-  show: ({
-    content,
-    onHide,
-  }: {
-    content: ReactNode;
-    onHide?: () => Promise<void>;
-  }) => {
-    const id = `${Date.now()}`;
-    portalInstance?.showPortal({
-      id,
+  // show: ({ content }: { content: PortalType['content'] }) => {
+  //   const id = `${Date.now()}`;
+  //   portalInstance?.mountPortal({
+  //     id,
+  //     content,
+  //   });
+  //
+  //   return () => Portal.hide(id);
+  // },
+  // hide: (id: string) => {
+  //   portalInstance?.unloadPortal(id);
+  // },
+  open: ({ content }: { content: PortalType['content'] }) => {
+    const portalId = `${Date.now()}`;
+    if (!portalInstance) {
+      console.error('PortalProvider not found');
+    }
+    portalInstance?.mountPortal({
+      id: portalId,
+      defaultOpen: true,
       content,
-      onHide,
     });
-
-    return () => Portal.hide(id);
+    portalInstance?.showPortal(portalId);
+    return portalId;
   },
-  hide: (id: string) => {
+  // 关闭后卸载
+  closeAndUnload: (id: string, delay = 300) => {
     portalInstance?.hidePortal(id);
+    if (delayUnloadMap[id]) {
+      clearTimeout(delayUnloadMap[id]);
+    }
+    delayUnloadMap[id] = setTimeout(() => {
+      portalInstance?.unloadPortal(id);
+    }, delay);
+  },
+  // 卸载
+  unload: (id: string) => {
+    portalInstance?.unloadPortal(id);
   },
 };
 
 // PortalManager 用于连接全局 API 和 Provider
 export const PortalManager = () => {
-  const { showPortal, hidePortal } = usePortal();
+  const { mountPortal, unloadPortal, showPortal, hidePortal } = usePortal();
   useEffect(() => {
-    if (showPortal && hidePortal) {
-      portalInstance = { showPortal, hidePortal };
+    if (!portalInstance) {
+      portalInstance = {
+        mountPortal,
+        unloadPortal,
+        showPortal,
+        hidePortal,
+      };
     }
     return () => {
       portalInstance = null;
     };
-  }, [showPortal, hidePortal]);
+  }, [mountPortal, unloadPortal, showPortal, hidePortal]);
 
   return null;
 };
@@ -70,30 +110,81 @@ export const PortalProvider = ({ children }: { children: ReactNode }) => {
   // 存放所有 Portal 组件
   const [portals, setPortals] = useState<PortalType[]>([]);
 
-  const showPortal = (portal: PortalType) => {
-    setPortals((prev) => [...prev, portal]);
-  };
+  // 控制 Portals 是否打开
+  const [portalsOpen, setPortalsOpen] = useState<{ [key: string]: boolean }>(
+    {},
+  );
 
-  const hidePortal = async (id: string) => {
+  const mountPortal = useCallback((portal: PortalType) => {
+    setPortals((prev) => {
+      const find = prev.find((p) => p.id === portal.id);
+      if (find) {
+        return prev;
+      }
+      return [...prev, portal];
+    });
+
+    setPortalsOpen((prev) => {
+      return {
+        ...prev,
+        [portal.id]: portal.defaultOpen || false,
+      };
+    });
+  }, []);
+
+  const unloadPortal = async (id: string) => {
     const find = portals.find((p) => p.id === id);
     if (!find) {
       return;
     }
-    if (find.onHide) {
-      await find.onHide();
-    }
     setPortals((prev) => prev.filter((p) => p.id !== id));
+    setPortalsOpen((prev) => {
+      const { [id]: _, ...rest } = prev;
+      return rest;
+    });
+  };
+
+  // 控制 Portal 是否打开
+  const setPortalOpen = (id: string, isOpen: boolean) => {
+    setPortalsOpen((prev) => {
+      return {
+        ...prev,
+        [id]: isOpen,
+      };
+    });
+  };
+
+  const showPortal = (id: string) => {
+    setPortalOpen(id, true);
+  };
+
+  const hidePortal = (id: string) => {
+    setPortalOpen(id, false);
   };
 
   return (
-    // @ts-ignore
-    <PortalContext.Provider value={{ showPortal, hidePortal }}>
+    <PortalContext.Provider
+      value={{ mountPortal, unloadPortal, showPortal, hidePortal }}
+    >
       {children}
       {/* 渲染所有 Portals 到顶层 */}
-      <View>
-        {portals.map((item) => (
-          <View key={item.id}>{item.content}</View>
-        ))}
+      <View id={'portal-root'}>
+        {portals.map((item) => {
+          const Content = item.content;
+          const isOpen = portalsOpen[item.id];
+          return (
+            <View key={item.id}>
+              {typeof Content === 'function' ? (
+                <Content
+                  open={isOpen}
+                  onOpenChange={(open) => setPortalOpen(item.id, open)}
+                />
+              ) : (
+                Content
+              )}
+            </View>
+          );
+        })}
       </View>
 
       <PortalManager />

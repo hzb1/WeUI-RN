@@ -75,7 +75,9 @@ const useStyles = () => {
       fontSize: 14,
       color: theme['FG-1'],
     },
-    body: {},
+    body: {
+      position: 'static',
+    },
     code: {
       position: 'absolute',
       right: 40,

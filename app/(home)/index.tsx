@@ -117,8 +117,8 @@ const Index = () => {
       iconUrl: 'https://weui.io/images/icon_nav_feedback.png',
       items: [
         {
-          name: 'Actionsheet',
-          url: 'https://weui.io/#actionsheet',
+          name: 'ActionSheet',
+          url: '/actionSheet',
         },
         {
           name: 'Dialog',
