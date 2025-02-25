@@ -30,6 +30,7 @@ const StackComponent = () => {
       <Stack screenOptions={screenOptions}>
         <Stack.Screen name="(home)/index" />
         <Stack.Screen name="(demo)/button/index" />
+        <Stack.Screen name="(demo)/model/index" />
         <Stack.Screen name="(demo)/dialog/index" />
         <Stack.Screen name="(demo)/input/index" />
         <Stack.Screen name="(demo)/list/index" />

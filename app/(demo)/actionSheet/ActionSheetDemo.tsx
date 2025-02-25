@@ -3,7 +3,7 @@ import {
   View,
   StyleSheet,
   Text,
-  Pressable,
+  ToastAndroid,
   TouchableOpacity,
 } from 'react-native';
 
@@ -14,6 +14,12 @@ import Button from '@/components/Button';
 
 const ActionSheetDemo = () => {
   const [openBottomSheet, setOpenBottomSheet] = useState(false);
+
+  const closeBottomSheet = () => {
+    console.log('closeBottomSheet');
+    ToastAndroid.show('点击了关闭', ToastAndroid.TOP);
+    setOpenBottomSheet(false);
+  };
 
   const onPressActionSheet = () => {
     const close = ActionSheet.open({
@@ -66,11 +72,11 @@ const ActionSheetDemo = () => {
           <Text>Content</Text>
           <TouchableOpacity
             style={{ justifyContent: 'center', height: 80 }}
-            onPress={() => setOpenBottomSheet(false)}
+            onPress={closeBottomSheet}
           >
             <Text>Pressable</Text>
           </TouchableOpacity>
-          <Button onPress={() => setOpenBottomSheet(false)}>关闭</Button>
+          <Button onPress={closeBottomSheet}>关闭</Button>
           <Text>Content</Text>
           <Text>Content</Text>
         </View>

@@ -33,7 +33,7 @@ const BottomSheet = ({
 }: BottomSheetProps) => {
   const [localVisible, setLocalVisible] = useState(open);
   const height = useSharedValue(0);
-  const progress = useSharedValue(1); // 初始值设为1，对应关闭状态
+  const progress = useSharedValue(1);
 
   useEffect(() => {
     if (open) {
@@ -82,20 +82,16 @@ const BottomSheet = ({
       visible={localVisible}
       onRequestClose={handleClose}
     >
-      {/*<Animated.View style={[styles.mask, maskAnimatedStyle]}>*/}
-      {/*  <Pressable onPress={onMaskPress} style={{ flex: 1 }} />*/}
-      {/*</Animated.View>*/}
-      <Pressable
-        onPress={onMaskPress}
-        style={[styles.mask, maskAnimatedStyle]}
-      />
+      <Animated.View style={[styles.mask, maskAnimatedStyle]}>
+        <Pressable onPress={onMaskPress} style={{ flex: 1 }} />
+      </Animated.View>
       <Animated.View
         style={[styles.bottomSheet, sheetStyle]}
         onLayout={(e) => {
           height.value = e.nativeEvent.layout.height;
         }}
       >
-        {children}
+        <View>{children}</View>
       </Animated.View>
     </Modal>
   );

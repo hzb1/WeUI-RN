@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { PanResponder, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import BottomSheet from '@/components/BottomSheet/BottomSheet';
 import Divider from '@/components/Divider/Divider';
@@ -44,6 +44,14 @@ const ActionSheet = (props: ActionSheetProps) => {
     [onSelect, options],
   );
 
+  const panresponder = PanResponder.create({
+    onStartShouldSetPanResponder: () => true,
+    onShouldBlockNativeResponder: () => false,
+    onPanResponderRelease: () => {
+      // props.onPress()
+    },
+  });
+
   return (
     <BottomSheet
       open={open}
@@ -56,7 +64,7 @@ const ActionSheet = (props: ActionSheetProps) => {
         </View>
         <View style={styles.menu}>
           {options.map((option, index) => (
-            <View key={index}>
+            <View key={index} {...panresponder.panHandlers}>
               <Divider />
               <Pressable
                 onPress={() => onPressItem(index)}
@@ -75,7 +83,7 @@ const ActionSheet = (props: ActionSheetProps) => {
         </View>
 
         <Pressable
-          onPress={() => onCancel?.()}
+          onPressIn={() => onCancel?.()}
           style={({ pressed }) => {
             if (pressed) {
               return [styles.cell, styles.cancel, styles.cellActive];

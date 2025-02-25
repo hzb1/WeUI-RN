@@ -117,6 +117,10 @@ const Index = () => {
       iconUrl: 'https://weui.io/images/icon_nav_feedback.png',
       items: [
         {
+          name: 'Modal',
+          url: '/modal',
+        },
+        {
           name: 'ActionSheet',
           url: '/actionSheet',
         },
