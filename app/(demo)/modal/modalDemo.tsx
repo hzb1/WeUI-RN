@@ -1,29 +1,38 @@
 import React, { useState } from 'react';
-import {
-  View,
-  StyleSheet,
-  Text,
-  ToastAndroid,
-  TouchableOpacity,
-  Dimensions,
-} from 'react-native';
+import { View, StyleSheet, Text, Dimensions } from 'react-native';
 
 import DemoPage from '@/app/(demo)/components/DemoPage';
 import Button from '@/components/Button';
 import Modal from '@/components/Modal/Modal';
+import { openModal } from '@/components/Modal/methods';
 
 const ModalDemo = () => {
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
 
+  // 函数式调用
+  const onOpen = () => {
+    const close = openModal({
+      children: (
+        <View style={styles.modal1}>
+          <Text>这是一个弹窗</Text>
+          <Button size={'mini'} onPress={() => close()}>
+            关 闭
+          </Button>
+        </View>
+      ),
+    });
+  };
+
   return (
     <DemoPage title={'Modal'} desc={'弹窗'}>
       <View>
         <View style={{ gap: 16 }}>
           <Button onPress={() => setOpen1(true)}>基本使用</Button>
-          <Button onPress={() => setOpen2(true)}>基本使用</Button>
-          <Button onPress={() => setOpen3(true)}>基本使用</Button>
+          <Button onPress={() => setOpen2(true)}>基本使用二</Button>
+          <Button onPress={() => setOpen3(true)}>基本使用三</Button>
+          <Button onPress={onOpen}>函数式调用</Button>
         </View>
 
         <Modal

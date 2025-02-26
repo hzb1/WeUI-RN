@@ -20,7 +20,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-interface ModalProps {
+export interface ModalProps {
   /** 是否显示模态框 */
   open: boolean;
   /** 关闭事件回调 */
@@ -137,6 +137,9 @@ const Modal = ({
     [contentPosition],
   );
 
+  // 动画进行中
+  const isAnimating = progress.get() > 0 && progress.get() < 1;
+
   return (
     <NModal
       transparent
@@ -152,18 +155,19 @@ const Modal = ({
             { backgroundColor: maskColor },
             maskAnimatedStyle,
           ]}
+          renderToHardwareTextureAndroid={isAnimating} // 提升性能
         >
           <Pressable onPress={onMaskPress} style={{ flex: 1 }} />
         </Animated.View>
 
         {/* 内容区域 */}
         <Animated.View
-          style={[styles.content, contentAnimatedStyle]}
+          style={[contentAnimatedStyle]}
           onLayout={({ nativeEvent }) => {
             height.value = nativeEvent.layout.height;
             setIsContentLayoutMeasured(true);
           }}
-          renderToHardwareTextureAndroid={true} // 提升性能
+          renderToHardwareTextureAndroid={isAnimating} // 提升性能
         >
           {children}
         </Animated.View>
@@ -172,10 +176,10 @@ const Modal = ({
   );
 };
 
-const styles = StyleSheet.create({
-  content: {
-    // 内容样式可根据需要扩展
-  },
-});
+// const styles = StyleSheet.create({
+//   content: {
+//     // 内容样式可根据需要扩展
+//   },
+// });
 
 export default Modal;
