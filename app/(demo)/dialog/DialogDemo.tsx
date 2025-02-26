@@ -4,22 +4,15 @@ import { View } from 'react-native';
 import DemoPage from '@/app/(demo)/components/DemoPage';
 import Button from '@/components/Button';
 import Dialog from '@/components/Dialog/Dialog';
+import { openConfirm } from '@/components/Dialog/methods';
 
 const DialogDemo = () => {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [modalVisible2, setModalVisible2] = useState(false);
-
-  const showDialogStyle1 = () => {
-    setModalVisible(true);
-  };
-
-  const showDialogStyle2 = () => {
-    setModalVisible2(true);
-  };
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
   // 命令式演示
   const showDialogStyle3 = () => {
-    const close = Dialog.confirm({
+    const close = openConfirm({
       title: '弹窗标题',
       content:
         '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内',
@@ -32,14 +25,6 @@ const DialogDemo = () => {
         console.log('cancel');
         close();
       },
-      onClose: () => {
-        console.log('close');
-        close();
-      },
-      onMaskPress: () => {
-        console.log('mask press');
-        close();
-      },
     });
   };
 
@@ -47,36 +32,35 @@ const DialogDemo = () => {
     <DemoPage title={'Dialog'} desc={'对话框'}>
       <View>
         <View style={{ gap: 16 }}>
-          <Button onPress={showDialogStyle1}>样式一</Button>
-          <Button onPress={showDialogStyle2}>样式二</Button>
+          <Button onPress={() => setIsOpen1(true)}>样式一</Button>
+          <Button onPress={() => setIsOpen2(true)}>样式二</Button>
           <Button onPress={showDialogStyle3}>样式三</Button>
         </View>
       </View>
 
       {/*样式一*/}
       <Dialog
-        visible={modalVisible}
+        open={isOpen1}
         title={'弹窗标题'}
         content={
           '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内'
         }
-        onClose={() => setModalVisible(false)}
-        onMaskPress={() => setModalVisible(false)}
-        onConfirm={() => setModalVisible(false)}
-        onCancel={() => setModalVisible(false)}
+        onClose={() => setIsOpen1(false)}
+        onConfirm={() => setIsOpen1(false)}
+        onCancel={() => setIsOpen1(false)}
       />
 
       {/*样式二*/}
       <Dialog
-        visible={modalVisible2}
+        open={isOpen2}
         content={
           '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内'
         }
         confirmType={'warn'}
-        onClose={() => setModalVisible2(false)}
-        onMaskPress={() => setModalVisible2(false)}
-        onConfirm={() => setModalVisible2(false)}
-        onCancel={() => setModalVisible2(false)}
+        closeOnMaskPress={false}
+        onClose={() => setIsOpen2(false)}
+        onConfirm={() => setIsOpen2(false)}
+        onCancel={() => setIsOpen2(false)}
       />
     </DemoPage>
   );

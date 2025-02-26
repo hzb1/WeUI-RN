@@ -54,7 +54,7 @@ const Modal = ({
   // 内容区域高度，用于滑动动画计算
   const height = useSharedValue(0);
   // 动画进度，0表示完全显示，1表示完全隐藏
-  const progress = useSharedValue(1);
+  const animationProgress = useSharedValue(1);
   // 标记内容区域高度是否已测量
   const [isContentLayoutMeasured, setIsContentLayoutMeasured] = useState(false);
 
@@ -65,25 +65,41 @@ const Modal = ({
       setIsContentLayoutMeasured(false); // 重置测量状态
     } else {
       // 关闭动画：进度从0到1，完成后隐藏组件
-      progress.value = withTiming(
+      // 计算出剩余时间
+      const remainingDuration = duration * (1 - animationProgress.value);
+      animationProgress.value = withTiming(
         1,
-        { duration, easing: Easing.linear },
+        { duration: remainingDuration, easing: Easing.linear },
         (isFinished) => {
           if (isFinished) {
+            console.log('close animation finished', remainingDuration);
             runOnJS(setLocalVisible)(false);
             onCloseAnimationEnd && runOnJS(onCloseAnimationEnd)();
           }
         },
       );
     }
-  }, [duration, onCloseAnimationEnd, open, progress]);
+  }, [duration, onCloseAnimationEnd, open, animationProgress]);
 
   // 当内容高度测量完成且需要打开时启动动画
   useEffect(() => {
     if (open && isContentLayoutMeasured) {
-      progress.value = withTiming(0, { duration, easing: Easing.linear });
+      // 计算出剩余时间
+      const remainingDuration = duration * animationProgress.value;
+      animationProgress.value = withTiming(
+        0,
+        {
+          duration: remainingDuration,
+          easing: Easing.linear,
+        },
+        (finished) => {
+          if (finished) {
+            console.log('open animation finished', remainingDuration);
+          }
+        },
+      );
     }
-  }, [open, isContentLayoutMeasured, progress, duration]);
+  }, [open, isContentLayoutMeasured, animationProgress, duration]);
 
   // 内容区域动画样式
   const contentAnimatedStyle = useAnimatedStyle(() => {
@@ -91,23 +107,27 @@ const Modal = ({
     const isSlide = contentPosition !== 'center';
 
     if (!isSlide) {
-      return { opacity: 1 - progress.value };
+      return { opacity: 1 - animationProgress.value };
     }
 
     // 滑动距离计算（使用2倍高度保证完全移出屏幕）
-    const translateY = progress.value * 2 * height.value;
+    const translateY = animationProgress.value * 2 * height.value;
     return {
+      // 防止打开时闪烁,
+      opacity: animationProgress.value > 0.8 ? 0 : 1,
       transform: [
         {
           translateY: contentPosition === 'bottom' ? translateY : -translateY,
+          // translateY: contentPosition === 'bottom' ? '100%' : '-100%',
+          // translateY: `${100}%`,
         },
       ],
     };
-  }, [contentPosition, progress]);
+  }, [contentPosition, animationProgress, localVisible]);
 
   // 蒙层动画样式（仅透明度变化）
   const maskAnimatedStyle = useAnimatedStyle(() => ({
-    opacity: 1 - progress.value,
+    opacity: 1 - animationProgress.value,
   }));
 
   // 关闭事件处理
@@ -138,7 +158,8 @@ const Modal = ({
   );
 
   // 动画进行中
-  const isAnimating = progress.get() > 0 && progress.get() < 1;
+  // const isAnimating =
+  //   animationProgress.get() > 0 && animationProgress.get() < 1;
 
   return (
     <NModal
@@ -155,7 +176,7 @@ const Modal = ({
             { backgroundColor: maskColor },
             maskAnimatedStyle,
           ]}
-          renderToHardwareTextureAndroid={isAnimating} // 提升性能
+          renderToHardwareTextureAndroid={true} // 提升性能
         >
           <Pressable onPress={onMaskPress} style={{ flex: 1 }} />
         </Animated.View>
@@ -167,7 +188,7 @@ const Modal = ({
             height.value = nativeEvent.layout.height;
             setIsContentLayoutMeasured(true);
           }}
-          renderToHardwareTextureAndroid={isAnimating} // 提升性能
+          renderToHardwareTextureAndroid={true} // 提升性能
         >
           {children}
         </Animated.View>

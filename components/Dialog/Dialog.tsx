@@ -1,6 +1,4 @@
 import {
-  Modal,
-  ModalProps,
   Pressable,
   StyleProp,
   StyleSheet,
@@ -9,22 +7,20 @@ import {
   ViewStyle,
 } from 'react-native';
 
-import { Portal } from '@/components/Portal/PortalProvider';
+import Modal, { ModalProps } from '@/components/Modal/Modal';
 import useTheme from '@/components/style/theme/useTheme';
 
-interface DialogProps extends ModalProps {
+interface DialogProps extends Omit<ModalProps, 'contentPosition'> {
   // 标题
   title?: string;
   // 内容
   content?: string;
-  // 关闭事件
-  onClose: () => void;
   // 确认事件，点击确认按钮时触发
   onConfirm: () => void;
   // 取消事件，点击取消按钮时触发
   onCancel: () => void;
   // 点击遮罩层时触发
-  onMaskPress?: () => void;
+  // onMaskPress?: () => void;
   // 垂直操作栏
   verticalAction?: boolean;
   // 确认按钮类型 primary | warn
@@ -36,8 +32,6 @@ const Dialog = (props: DialogProps) => {
     title,
     content,
     confirmType,
-    onClose,
-    onMaskPress,
     onCancel,
     onConfirm,
     verticalAction = false,
@@ -46,135 +40,99 @@ const Dialog = (props: DialogProps) => {
   const styles = useStyles();
 
   return (
-    <Modal
-      animationType="fade"
-      transparent={true}
-      onRequestClose={onClose}
-      {...modalProps}
-    >
-      <View style={styles.container}>
-        <View style={styles.dialogMask}>
-          <Pressable onPress={onMaskPress} style={{ flex: 1 }}></Pressable>
-        </View>
-        <View style={styles.dialog}>
-          {title && content ? (
-            <>
-              <View style={styles.dialog__hd}>
-                <Text style={styles.dialog__title}>{title}</Text>
-              </View>
-
-              <View style={styles.dialog__bd}>
-                <Text style={styles.dialog__content}>{content}</Text>
-              </View>
-            </>
-          ) : (
-            <View
-              style={[
-                styles.dialog__hd,
-                { paddingBottom: 0, marginBottom: 32 },
-              ]}
-            >
-              <Text style={styles.dialog__title}>{content}</Text>
+    <Modal {...modalProps} contentPosition={'center'}>
+      <View style={styles.dialog}>
+        {title && content ? (
+          <>
+            <View style={styles.dialog__hd}>
+              <Text style={styles.dialog__title}>{title}</Text>
             </View>
-          )}
 
+            <View style={styles.dialog__bd}>
+              <Text style={styles.dialog__content}>{content}</Text>
+            </View>
+          </>
+        ) : (
           <View
-            style={[
-              styles.dialog__ft,
-              {
-                flexDirection: verticalAction ? 'column-reverse' : 'row',
-              },
-            ]}
+            style={[styles.dialog__hd, { paddingBottom: 0, marginBottom: 32 }]}
           >
-            <Pressable
-              onPress={onCancel}
-              style={({ pressed }) => {
-                const s: StyleProp<ViewStyle> = {
-                  borderTopWidth: styles.dialog__ft.borderTopWidth,
-                  borderTopColor: styles.dialog__ft.borderTopColor,
-                };
-                if (pressed) {
-                  return [
-                    styles.dialog__btn,
-                    styles.dialog__btnDefault,
-                    styles.dialog__btn_active,
-                    verticalAction && s,
-                  ];
-                }
+            <Text style={styles.dialog__title}>{content}</Text>
+          </View>
+        )}
+
+        <View
+          style={[
+            styles.dialog__ft,
+            {
+              flexDirection: verticalAction ? 'column-reverse' : 'row',
+            },
+          ]}
+        >
+          <Pressable
+            onPress={onCancel}
+            style={({ pressed }) => {
+              const s: StyleProp<ViewStyle> = {
+                borderTopWidth: styles.dialog__ft.borderTopWidth,
+                borderTopColor: styles.dialog__ft.borderTopColor,
+              };
+              if (pressed) {
                 return [
                   styles.dialog__btn,
                   styles.dialog__btnDefault,
+                  styles.dialog__btn_active,
                   verticalAction && s,
                 ];
-              }}
+              }
+              return [
+                styles.dialog__btn,
+                styles.dialog__btnDefault,
+                verticalAction && s,
+              ];
+            }}
+          >
+            <Text style={styles.dialog__btnDefaultText}>辅助操作</Text>
+          </Pressable>
+          <Pressable
+            style={({ pressed }) => {
+              if (pressed) {
+                return [styles.dialog__btn, styles.dialog__btn_active];
+              }
+              return [styles.dialog__btn];
+            }}
+            onPress={onConfirm}
+          >
+            <Text
+              style={[
+                styles.dialog__btnPrimaryText,
+                confirmType === 'warn' && styles.dialog__btnWarnText,
+              ]}
             >
-              <Text style={styles.dialog__btnDefaultText}>辅助操作</Text>
-            </Pressable>
-            <Pressable
-              style={({ pressed }) => {
-                if (pressed) {
-                  return [styles.dialog__btn, styles.dialog__btn_active];
-                }
-                return [styles.dialog__btn];
-              }}
-              onPress={onConfirm}
-            >
-              <Text
-                style={[
-                  styles.dialog__btnPrimaryText,
-                  confirmType === 'warn' && styles.dialog__btnWarnText,
-                ]}
-              >
-                主操作
-              </Text>
-            </Pressable>
-          </View>
+              主操作
+            </Text>
+          </Pressable>
         </View>
       </View>
     </Modal>
   );
 };
 
-interface DialogConfirmProps extends DialogProps {
-  // 确认事件，点击确认按钮时触发
-  // onConfirm: () => void;
-}
-
-Dialog.confirm = ({ ...dialogProps }: DialogConfirmProps) => {
-  const portalId = Portal.open({
-    content: ({ open }) => (
-      <Dialog
-        {...dialogProps}
-        visible={open}
-        onConfirm={() => {
-          dialogProps.onConfirm();
-        }}
-      />
-    ),
-  });
-
-  return () => {
-    Portal.closeAndUnload(portalId);
-  };
-};
-
 const useStyles = () => {
   const themeStyle = useTheme();
 
   return StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    dialogMask: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundColor: 'rgba(0, 0, 0, 0.5)', // 透明的遮罩层
-    },
+    // container: {
+    //   flex: 1,
+    //   justifyContent: 'center',
+    //   alignItems: 'center',
+    // },
+    // dialogMask: {
+    //   position: 'absolute',
+    //   top: 0,
+    //   left: 0,
+    //   right: 0,
+    //   bottom: 0,
+    //   backgroundColor: 'rgba(0, 0, 0, 0.5)', // 透明的遮罩层
+    // },
 
     dialog: {
       width: 320,
