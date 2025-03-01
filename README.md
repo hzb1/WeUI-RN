@@ -1,50 +1,32 @@
-# Welcome to your Expo app 👋
+# WeUI for React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+这是一个在 React Native 中实现的 WeUI 组件库
 
-## Get started
 
-1. Install dependencies
+> 📢 它是用于学习 React Native，不建议在生产环境中使用
 
-   ```bash
-   npm install
-   ```
+## 特性
 
-2. Start the app
+- 与 WeUI 保持一致的视觉风格
+- 支持 黑夜模式
+- 使用 TypeScript 编写，提供完整的类型定义
+- 使用 Reanimated 3 实现动画效果
 
-   ```bash
-    npx expo start
-   ```
+## 进度
 
-In the output, you'll find options to open the app in a
+* ✅ 表示已完成
+* 🚧 表示存在问题，但可以使用
+* ❌ 表示未完成
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| **组件** | Android | IOS | Web |
+|--------|---------|-----|-----|
+| Button | ✅       | ✅   | 🚧  |
+| Modal  | ✅       | ✅   | ✅   |
+| Form   |         |     |     |
+| Input  |         |     |     |
+| Input  |         |     |     |
+| List  |         |     |     |
+| Slider  |         |     |     |
+| Uploader  |         |     |     |
+| Uploader  |         |     |     |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
