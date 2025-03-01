@@ -10,7 +10,8 @@ import {
 import Modal, { ModalProps } from '@/components/Modal/Modal';
 import useTheme from '@/components/style/theme/useTheme';
 
-interface DialogProps extends Omit<ModalProps, 'contentPosition'> {
+export interface DialogProps
+  extends Omit<ModalProps, 'contentPosition' | 'children'> {
   // 标题
   title?: string;
   // 内容

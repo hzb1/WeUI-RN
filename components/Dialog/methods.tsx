@@ -1,4 +1,4 @@
-import Dialog from '@/components/Dialog/Dialog';
+import Dialog, { DialogProps } from '@/components/Dialog/Dialog';
 import { Portal } from '@/components/Portal/PortalProvider';
 
 export type DialogConfirmProps = Omit<DialogProps, 'open' | 'onClose'>;

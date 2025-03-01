@@ -32,6 +32,7 @@ const StackComponent = () => {
         <Stack.Screen name="(demo)/button/index" />
         <Stack.Screen name="(demo)/model/index" />
         <Stack.Screen name="(demo)/dialog/index" />
+        <Stack.Screen name="(demo)/half-screen-dialog/index" />
         <Stack.Screen name="(demo)/input/index" />
         <Stack.Screen name="(demo)/list/index" />
         <Stack.Screen name="(demo)/actionSheet/index" />

@@ -37,7 +37,7 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "baseUrl": "/weui"
+      "baseUrl": "/WeUI-RN/dist"
     },
     "extra": {
       "router": {
