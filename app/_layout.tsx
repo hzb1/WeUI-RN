@@ -1,6 +1,7 @@
 import { type NativeStackNavigationOptions } from '@react-navigation/native-stack/src/types';
 import { Stack } from 'expo-router';
 import { useMemo } from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Provider from '@/components/Provider/Provider';
 import useTheme from '@/components/style/theme/useTheme';
@@ -8,22 +9,26 @@ import useTheme from '@/components/style/theme/useTheme';
 export default function RootLayout() {
   return (
     <Provider>
-      <StackComponent />
+      <SafeAreaProvider>
+        <StackComponent />
+      </SafeAreaProvider>
     </Provider>
   );
 }
 
 const StackComponent = () => {
-  const themeStyles = useTheme();
+  // const themeStyles = useTheme();
 
   const screenOptions: NativeStackNavigationOptions = useMemo(() => {
     return {
       headerShown: false,
-      statusBarBackgroundColor: themeStyles['BG-0'],
+      // statusBarBackgroundColor: themeStyles['BG-0'],
+      statusBarBackgroundColor: 'transparent',
+      statusBarTranslucent: true,
       animation: 'ios_from_right',
       // statusBarStyle: theme === 'dark' ? 'light' : 'dark',
     };
-  }, [themeStyles]);
+  }, []);
 
   return (
     <>

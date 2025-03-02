@@ -1,7 +1,7 @@
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import CollapsibleCard from '@/app/components/CollapsibleCard';
 import FilteredImage from '@/app/components/FilteredImage';
@@ -187,55 +187,53 @@ const Index = () => {
   };
 
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={[styles.container]}>
-        <ParallaxScrollView
-          headerImage={
-            <View style={styles.head}>
-              <FilteredImage
-                style={styles.title}
-                source={{
-                  uri: 'https://weui.io/images/logo.png',
-                }}
-              />
-              <Text style={styles.desc}>
-                WeUI
-                是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。
-              </Text>
-            </View>
-          }
+    <SafeAreaView style={[styles.container]}>
+      <ParallaxScrollView
+        headerImage={
+          <View style={styles.head}>
+            <FilteredImage
+              style={styles.title}
+              source={{
+                uri: 'https://weui.io/images/logo.png',
+              }}
+            />
+            <Text style={styles.desc}>
+              WeUI
+              是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。
+            </Text>
+          </View>
+        }
+      >
+        <View
+          style={{
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+          }}
         >
-          <View
-            style={{
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-            }}
-          >
-            <View style={styles.body}>
-              <View style={styles.lists}>
-                {data.map((item) => (
-                  <CollapsibleCard
-                    {...item}
-                    isOpen={openTitle === item.title}
-                    key={item.title}
-                    onOpenChange={(open) => onOpenChange(item.title, open)}
-                    onPress={onClickItem}
-                  />
-                ))}
-              </View>
-            </View>
-            <View style={styles.footer}>
-              <Image
-                style={{ width: 84, height: 19 }}
-                source={{ uri: 'https://weui.io/images/icon_footer_link.png' }}
-              ></Image>
+          <View style={styles.body}>
+            <View style={styles.lists}>
+              {data.map((item) => (
+                <CollapsibleCard
+                  {...item}
+                  isOpen={openTitle === item.title}
+                  key={item.title}
+                  onOpenChange={(open) => onOpenChange(item.title, open)}
+                  onPress={onClickItem}
+                />
+              ))}
             </View>
           </View>
-        </ParallaxScrollView>
+          <View style={styles.footer}>
+            <Image
+              style={{ width: 84, height: 19 }}
+              source={{ uri: 'https://weui.io/images/icon_footer_link.png' }}
+            ></Image>
+          </View>
+        </View>
+      </ParallaxScrollView>
 
-        <ThemeSwitch style={styles.themeSwitch} color={theme['FG-0']} />
-      </SafeAreaView>
-    </SafeAreaProvider>
+      <ThemeSwitch style={styles.themeSwitch} color={theme['FG-0']} />
+    </SafeAreaView>
   );
 };
 
@@ -243,9 +241,8 @@ const useStyles = () => {
   const theme = useTheme();
   return StyleSheet.create({
     container: {
-      // flex: 1,
+      flex: 1,
       height: '100%',
-      // backgroundColor: '#ededed',
       backgroundColor: theme['BG-0'],
       fontSize: 16,
       position: 'relative',
@@ -274,6 +271,7 @@ const useStyles = () => {
     lists: {
       marginBottom: 20,
       gap: 8,
+      backgroundColor: theme['BG-0'],
     },
     footer: {
       paddingTop: 40,
