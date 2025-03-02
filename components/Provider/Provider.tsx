@@ -1,4 +1,4 @@
-import { ReactNode, useCallback, useState } from 'react';
+import { ReactNode, useCallback, useEffect, useState } from 'react';
 import { useColorScheme, StatusBar } from 'react-native';
 
 import { ThemeContext, ThemeContextType } from '@/components/Contexts';
@@ -11,13 +11,22 @@ const Provider = ({ children }: { children: ReactNode }) => {
 
   const onChangeTheme = useCallback((theme: ThemeContextType) => {
     // 设置状态栏字体颜色
+    // if (theme === 'light') {
+    //   StatusBar.setBarStyle('dark-content', true);
+    // } else {
+    //   StatusBar.setBarStyle('light-content', true);
+    // }
+    setTheme(theme);
+  }, []);
+
+  useEffect(() => {
+    // 设置状态栏字体颜色
     if (theme === 'light') {
       StatusBar.setBarStyle('dark-content', true);
     } else {
       StatusBar.setBarStyle('light-content', true);
     }
-    setTheme(theme);
-  }, []);
+  }, [theme]);
 
   return (
     <>

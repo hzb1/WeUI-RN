@@ -1,6 +1,6 @@
 // @ts-ignore
 import Color from 'color';
-import { StyleProp, ViewStyle, StyleSheet, ViewProps } from 'react-native';
+import { StyleProp, ViewStyle, StyleSheet } from 'react-native';
 
 import { ButtonProps } from '@/components/Button/ButtonType';
 import { ThemeKey } from '@/components/style/theme';
@@ -61,9 +61,9 @@ const getButtonStyle = ({
   }
 
   if (buttonStyle) {
-    const _buttonStyle =
-      typeof buttonStyle === 'function'
-        ? buttonStyle({ pressed })
+    const _buttonStyle
+      = typeof buttonStyle === 'function'
+        ? buttonStyle({ pressed } as any)
         : buttonStyle;
     styleList.push(_buttonStyle);
   }

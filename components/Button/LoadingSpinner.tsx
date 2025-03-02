@@ -19,12 +19,7 @@ import Svg, {
 
 // svg组件 https://react-svgr.com/playground/?dimensions=false&native=true&svgo=false&typescript=true
 const Loading = (props: SvgProps) => (
-  <Svg
-    viewBox="0 0 80 80"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    {...props}
-  >
+  <Svg viewBox="0 0 80 80" {...props}>
     <Defs>
       <LinearGradient
         x1="94.0869141%"

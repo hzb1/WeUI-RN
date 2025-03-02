@@ -4,7 +4,6 @@ import { useMemo } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Provider from '@/components/Provider/Provider';
-import useTheme from '@/components/style/theme/useTheme';
 
 export default function RootLayout() {
   return (
@@ -43,12 +42,14 @@ const StackComponent = () => {
         <Stack.Screen name="(demo)/actionSheet/index" />
         <Stack.Screen
           name="sourceCode/index"
-          options={{
-            headerShown: false,
-            headerBackTitle: '返回',
-            title: '代码演示',
-            presentation: 'modal',
-          }}
+          options={
+            {
+              // headerShown: false,
+              // headerBackTitle: '返回',
+              // title: '代码演示',
+              // presentation: 'modal',
+            }
+          }
         />
       </Stack>
     </>

@@ -7,7 +7,6 @@ import {
   ViewStyle,
   StyleSheet,
   Animated,
-  Pressable,
   TouchableOpacity,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
